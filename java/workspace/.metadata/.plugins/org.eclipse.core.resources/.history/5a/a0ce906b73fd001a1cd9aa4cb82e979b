@@ -1,0 +1,8 @@
+package Ex2.Question4;
+
+public class main {
+	public static void main(String[] args) {
+		int a = sum(1,2);
+		System.out.println(a);
+	}
+}

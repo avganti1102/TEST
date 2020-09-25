@@ -1,0 +1,8 @@
+package Lesson4.Mobile;
+
+public class Mobile {
+	String OS;
+	public void call(){
+		System.out.println("Calling!!");
+	}
+}

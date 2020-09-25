@@ -1,0 +1,25 @@
+package Ex5.Question1_2;
+
+import java.util.Scanner;
+
+public class NhanVien extends CanBo{
+	private String congViec;
+	
+	public String getCongViec() {
+		return congViec;
+	}
+	
+	@Override
+	public void input() {
+		Scanner sc = new Scanner(System.in);
+		super.input();
+		System.out.println("Nhập công việc: ");
+		congViec = sc.nextLine();
+	}
+	
+	@Override
+	public void info() {
+		super.info();
+		System.out.println("Ngành đào tạo: "+congViec);
+	}
+}

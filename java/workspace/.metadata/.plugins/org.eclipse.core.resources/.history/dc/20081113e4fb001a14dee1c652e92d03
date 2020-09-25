@@ -1,0 +1,13 @@
+package Ex6.Question1;
+
+public abstract class Contact {
+	private String numb;
+	private String name;
+	
+	public Contact(){}
+	
+	public abstract void insertContact();
+	public abstract void removeContact();
+	public abstract void updateContact();
+	public abstract void searchContact();
+}

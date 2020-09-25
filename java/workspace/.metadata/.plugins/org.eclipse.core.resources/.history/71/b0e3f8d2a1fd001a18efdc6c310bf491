@@ -1,0 +1,16 @@
+package Lesson6;
+
+import java.util.Scanner;
+
+public class main {
+	public static void main(String[] args) {
+		try {
+			int[] i = { 1, 2, 3 };
+			System.out.println(i[4]);
+		} catch (ArrayIndexOutOfBoundsException e) {
+			System.out.println("Nằm ngoài giới hạn mảng");
+		}
+		Scanner sc = new Scanner(System.in);
+		int a = sc.nextInt();
+	}
+}

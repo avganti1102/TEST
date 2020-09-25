@@ -1,0 +1,14 @@
+package Lesson4.Mobile;
+
+public class main {
+
+	public static void main(String[] args) {
+		Mobile m = new Mobile("Nokia");
+		Iphone i = new Iphone("8Plus");
+		Samsung ss = new Samsung("A50");
+		m.call();
+		i.call();
+		ss.call();
+	}
+
+}

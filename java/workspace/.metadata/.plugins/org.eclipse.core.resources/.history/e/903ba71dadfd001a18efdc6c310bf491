@@ -1,0 +1,22 @@
+package Lesson7;
+//static
+public class Person {
+	public static final int MAXAGE = 200;//Final: Không thể thay đổi được giá trị
+	public static int idPerson = 0; //Khi bđầu chạy ctr, idPerson được khởi tạo luôn(k cần khởi tạo đối tượng Person) và là duy nhất
+	public int number = 0;
+	
+	public Person(){
+		idPerson++;
+		number++;
+		//MAXAGE++;
+	}
+
+	public static int getIdPerson() {
+		return idPerson;
+	}
+
+	public int getNumber() {
+		return number;
+	}
+	
+}

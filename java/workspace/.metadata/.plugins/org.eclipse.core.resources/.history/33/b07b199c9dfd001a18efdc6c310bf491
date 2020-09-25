@@ -1,0 +1,7 @@
+package Lesson6;
+
+public class throwAble {
+	/*
+	 * Compile time: quá trình từ .java -> .class
+	 */
+}

@@ -1,0 +1,24 @@
+package Ex2.Question5;
+
+public class ClassicPhone {
+
+	@Override
+	public void call() {
+		super.call();
+	}
+	@Override
+	public void hear() {
+		// TODO Auto-generated method stub
+		super.hear();
+	}
+	@Override
+	public void sendSMS() {
+		// TODO Auto-generated method stub
+		super.sendSMS();
+	}
+	@Override
+	public void receiveSMS() {
+		// TODO Auto-generated method stub
+		super.receiveSMS();
+	}
+}

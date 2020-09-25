@@ -1,0 +1,7 @@
+import java.util.Date;
+
+public class groupAccount {
+	Group ID;
+	Account account;
+	Date joinDate;
+}

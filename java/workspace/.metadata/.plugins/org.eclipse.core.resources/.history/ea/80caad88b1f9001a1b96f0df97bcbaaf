@@ -1,0 +1,22 @@
+package Lesson4;
+
+import java.util.Scanner;
+
+public class test {
+	static Scanner sc = new Scanner(System.in);
+	static String str = "";
+	static String[] word;
+	
+	public static void main(String[] args){
+		str = sc.nextLine();
+		String[] splits = str.split(" ");
+		String[] word = new String[splits.length];
+		int ai = 0;
+		for (int i = str.length() - 1; i >= 0; i--) {
+			if( splits[i] != ""){
+				word[ai] = splits[i];
+				ai++;
+			}
+		}
+	}
+}

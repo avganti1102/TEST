@@ -1,0 +1,13 @@
+package Lesson4.Mobile;
+
+public class Mobile {
+	String OS;
+	String name;
+	public Mobile(String name){
+		this.name = name;
+	}
+	
+	public void call(){
+		System.out.println("Calling!!");
+	}
+}

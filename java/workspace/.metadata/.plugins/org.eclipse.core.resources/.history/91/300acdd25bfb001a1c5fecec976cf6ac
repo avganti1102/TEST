@@ -1,0 +1,9 @@
+package Ex5.Question4;
+
+public class ThuVien {
+	private String maTailieu;
+	private String NXB;
+	private int soBanPhatHanh;
+	
+	public ThuVien(){}
+}

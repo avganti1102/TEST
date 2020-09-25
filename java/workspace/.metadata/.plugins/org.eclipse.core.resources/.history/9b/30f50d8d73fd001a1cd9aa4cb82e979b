@@ -1,0 +1,10 @@
+package Ex2.Question4;
+
+public class main {
+	public static void main(String[] args) {
+		MyMath a = new MyMath();
+		System.out.println("Return int");
+		a.sum(3, 5);
+		System.out.println(a.sum(2,5));
+	}
+}

@@ -1,0 +1,7 @@
+package Ex2.Question2;
+
+public class Student extends Person{
+	private short maSV;
+	private float diemTB;
+	private String email;
+}

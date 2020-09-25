@@ -1,0 +1,15 @@
+package Ex5.Question4;
+
+public class ThuVien {
+	private String maTaiLieu;
+	private String NXB;
+	private int soBanPhatHanh;
+	
+	public ThuVien(){}
+	
+	public ThuVien(String maTaiLieu,String NXB,int soBanPhatHanh){
+		this.maTaiLieu = maTaiLieu;
+		this.NXB = NXB;
+		this.soBanPhatHanh = soBanPhatHanh;
+	}
+}

@@ -1,0 +1,6 @@
+package Ex5;
+
+public class KySu {
+	private String nganhDaoTao;
+	
+}

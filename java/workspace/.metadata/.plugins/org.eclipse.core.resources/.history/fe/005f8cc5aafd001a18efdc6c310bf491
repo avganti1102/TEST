@@ -1,0 +1,6 @@
+package Lesson7;
+//static
+public class Person {
+	public static int idPerson = 0; //Khi bđầu chạy ctr, idPerson được khởi tạo luôn(k cần khởi tạo đối tượng Person) và là duy nhất
+	public int age;
+}

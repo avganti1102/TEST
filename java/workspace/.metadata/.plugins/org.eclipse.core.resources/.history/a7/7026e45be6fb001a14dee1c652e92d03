@@ -1,0 +1,35 @@
+package Ex6.Question1;
+
+public class Phone extends Contact{
+	private Contact[] c;
+
+	public Phone(Contact[] c) {
+		this.c = c;
+	}
+
+	@Override
+	public void insertContact(String name,String numb) {
+		
+	}
+
+	@Override
+	public void removeContact() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void updateContact() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void searchContact() {
+		// TODO Auto-generated method stub
+		
+	}
+	
+	
+	
+}

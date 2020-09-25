@@ -1,0 +1,13 @@
+package Lesson4;
+
+public class OOP {
+	/*----------OOP----------
+	++ Đóng gói
+	++ Kế thừa
+	++ Trừu tượng
+	++ Đa hình
+	*/
+	/*---------Đóng gói--------
+	 * - Đóng gói dữ liệu thành 1 unit
+	 */
+}

@@ -1,0 +1,25 @@
+package Lesson6;
+
+import java.io.IOException;
+import java.util.InputMismatchException;
+import java.util.Scanner;
+
+public class main {
+	public static void main(String[] args){//Khi bên trong có 1 hàm có thể có lõi mà mình k muốn try catch cho nó -> cho ra chỗ khác xử lý
+		try {
+			int[] i = { 1, 2, 3 };
+			System.out.println(i[4]);
+		} catch (ArrayIndexOutOfBoundsException e) {
+			System.out.println("Nằm ngoài giới hạn mảng");
+		}
+		try{
+		Scanner sc = new Scanner(System.in);
+		int a = sc.nextInt();}
+		catch(InputMismatchException e){
+			System.out.println("Nhập lại vào một số nguyên");
+		}
+		
+		Person p = new Person();
+		p.chia(3, 0);
+	}
+}

@@ -1,0 +1,5 @@
+package Ex2.Question5;
+
+public class IWeapon {
+	void attackBadGuy():
+}

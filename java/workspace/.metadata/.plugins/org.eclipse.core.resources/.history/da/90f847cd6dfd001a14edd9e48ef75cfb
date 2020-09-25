@@ -1,0 +1,6 @@
+package Ex2.Question3;
+
+public interface ICalculate {
+	void s();
+	void p();
+}

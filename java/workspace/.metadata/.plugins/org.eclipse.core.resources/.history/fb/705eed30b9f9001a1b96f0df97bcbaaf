@@ -1,0 +1,9 @@
+package Lesson4.Mobile;
+
+public class Samsung extends Mobile{
+
+	public Samsung(String name) {
+		super(name);
+	}
+
+}

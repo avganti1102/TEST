@@ -1,0 +1,23 @@
+package Lesson4;
+
+import java.util.Scanner;
+
+public class test {
+	static Scanner sc = new Scanner(System.in);
+	static String str = "";
+	static String[] word;
+	
+	public static void reversee(String str){
+		//str = sc.nextLine();
+		String[] splits = str.split(" ");
+		String[] word = new String[splits.length];
+		for (int i = str.length() - 1; i >= 0; i--) {
+			if( splits[i] != "")
+			System.out.println(splits[i]);
+		}
+	}
+	
+	public static void main(String[] args){
+		reversee(" asas  s   s ");
+	}
+}

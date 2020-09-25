@@ -1,0 +1,7 @@
+package Lesson6;
+
+public class Person {
+	public int chia(int a,int b) throws ArithmeticException{
+		return a/b;
+	}
+}

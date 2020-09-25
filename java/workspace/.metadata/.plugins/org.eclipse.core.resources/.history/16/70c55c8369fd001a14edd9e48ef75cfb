@@ -1,0 +1,9 @@
+package Ex2.Question1;
+
+public class main {
+	public static void main(String[] args) {
+		Student[] st = new Student[10];
+		st[0] = new Student(1,"Dũng",1);
+		
+	}
+}

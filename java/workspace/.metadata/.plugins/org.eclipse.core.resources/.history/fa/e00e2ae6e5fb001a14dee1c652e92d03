@@ -1,0 +1,39 @@
+package Ex6.Question1;
+
+public class Phone extends Contact{
+	Contact[] c;
+	
+	public Phone() {
+		// TODO Auto-generated constructor stub
+	}
+	
+	
+	@Override
+	public void insertContact() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void removeContact() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void updateContact() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void searchContact() {
+		// TODO Auto-generated method stub
+		
+	}
+	
+	
+
+
+	
+}

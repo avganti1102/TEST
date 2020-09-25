@@ -1,0 +1,28 @@
+package Ex2.Question3;
+
+public class HCN implements ICalculate {
+	private double chieuDai;
+	private double chieuRong;
+	
+	public HCN(double chieuDai){
+		this.chieuDai = chieuDai;
+	}
+	
+	public HCN(double chieuDai,double chieuRong){
+		this.chieuDai = chieuDai;
+		this.chieuRong = chieuRong;
+	}
+
+	@Override
+	public void S(double chieuDai,double chieuRong) {
+		
+	}
+
+	@Override
+	public void P() {
+		// TODO Auto-generated method stub
+		
+	}
+	
+
+}

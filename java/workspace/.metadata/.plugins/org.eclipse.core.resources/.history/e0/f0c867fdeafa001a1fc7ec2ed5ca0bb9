@@ -1,0 +1,17 @@
+package Ex5;
+
+public class KySu extends CanBo{
+	private String nganhDaoTao;
+
+	public String getNganhDaoTao() {
+		return nganhDaoTao;
+	}
+	
+	@Override
+	public void input() {
+		// TODO Auto-generated method stub
+		super.input();
+		System.out.println("Nhập ngành đào tạo: ");
+		nganhDaoTao = sc.nextLine();
+	}
+}

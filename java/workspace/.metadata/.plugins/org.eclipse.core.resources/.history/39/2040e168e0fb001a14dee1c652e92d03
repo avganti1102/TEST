@@ -1,0 +1,35 @@
+package Ex5.Question4;
+
+import java.util.Scanner;
+
+import Ex5.Question1_2.CanBo;
+
+public class QLTV {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Số sách cần nhập: ");
+		int n = sc.nextInt();
+		Sach[] dss = new Sach[n];
+		for (int i = 0; i < n; i++) {
+			Sach s = new Sach();
+			s.input();
+			dss[i] = s;
+		}
+		System.out.println("Tên sách cần tìm: ");
+		String name = sc.nextLine();
+		for (int i = 0; i < n; i++) {
+			CanBo cb = new CanBo();
+			cb = dscb[i];
+			if(cb.check(name) == true)
+				cb.hienThi();
+		}
+		System.out.println("Danh sách cán bộ:");
+		for (int i = 0; i < n; i++) {
+			CanBo cb = new CanBo();
+			cb = dscb[i];
+			cb.hienThi();
+		}
+	}
+
+}

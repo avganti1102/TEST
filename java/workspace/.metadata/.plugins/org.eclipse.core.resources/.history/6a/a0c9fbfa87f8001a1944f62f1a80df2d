@@ -1,0 +1,10 @@
+import java.time.LocalDate;
+import java.util.Date;
+
+public class Group {
+	short ID;
+	String Name;
+	Account creator;
+	LocalDate createDate;
+	Account[] accounts;
+}

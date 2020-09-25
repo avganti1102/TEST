@@ -1,0 +1,34 @@
+package Ex6.Question1;
+
+import java.util.Scanner;
+
+public class Phone extends Contact{
+	private Contact[] c;
+
+	@Override
+	public void insertContact(String name, String numb) {
+		
+	}
+
+	@Override
+	public void removeContact(String name) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void updateContact(String name, String newNumb) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void searchContact(String name) {
+		// TODO Auto-generated method stub
+		
+	}
+	
+	
+	
+	
+}

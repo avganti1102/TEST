@@ -1,0 +1,4 @@
+
+public enum positionName2 {
+	DEV,TEST,SCRUM_MASTER,PM;
+}

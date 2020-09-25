@@ -1,0 +1,72 @@
+import java.text.SimpleDateFormat;
+import java.time.LocalDate;
+import java.util.Date;
+import java.util.Scanner;
+
+public class Ex2 {
+	
+	public static void Q1(int x){
+		System.out.printf("%d\n",x);
+	}
+	
+	public static void Q2(int x){
+		System.out.printf("%,d\n",x);
+	}
+	
+	public static void Q3(double x){
+		System.out.printf("%.4f\n",x);
+	}
+	
+	public static void Q4(){
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Họ và tên: " );
+		String str = sc.nextLine();
+		System.out.printf("Tên tôi là %s và tôi đang độc thân \n",str);
+	}
+	
+	public static void Q5(){
+		String pattern = "dd/MM/yyyy hh:mm:ss";
+	    SimpleDateFormat sd = new SimpleDateFormat(pattern);
+	    String date = sd.format(new Date());
+	    System.out.println(date);
+	}
+	public static void Q6(){
+		for (Account account : accounts) {
+			System.out.println("Email: " + account.email);
+			System.out.println("FullName: " + account.fullName);
+			System.out.println("Name Department: " + account.department.Name);
+		}
+	}
+	
+	public static void main(String[] args) {
+		Account acc1 = new Account();
+		acc1.ID = 1;
+		acc1.email = "account1@gmail.com";
+		acc1.userName = "sokhanh";
+		acc1.fullName = "Tong Quang Anh";
+		acc1.department = department1;
+		acc1.position = position1;
+		acc1.createDate = LocalDate.of(2019, 6, 12);
+
+		Account acc2 = new Account();
+		acc2.ID = 2;
+		acc2.email = "account2@gmail.com";
+		acc2.userName = "dongian";
+		acc2.fullName = "Phan Minh Quy";
+		acc2.department = department2;
+		acc2.position = position2;
+		acc2.createDate = LocalDate.of(2019, 5, 16);
+
+		Account acc3 = new Account();
+		acc3.ID = 3;
+		acc3.email = "account3@gmail.com";
+		acc3.userName = "sokhanh";
+		acc3.fullName = "Tong Quang Anh";
+		acc3.department = department1;
+		acc3.position = position3;
+		acc2.createDate = LocalDate.now();
+
+		Account[] accounts = { acc1, acc2, acc3}; 
+	}
+
+}

@@ -1,0 +1,16 @@
+package Ex2.Question2;
+
+import java.time.LocalDate;
+
+public class Student extends Person{
+	private short maSV;
+	private float diemTB;
+	private String email;
+	
+	public Student(String name, Gender gender, LocalDate ngaySinh, String diaChi) {
+		super(name, gender, ngaySinh, diaChi);
+		this.maSV = maSV;
+		this.diemTB = diemTB;
+		this.email = email;
+	}
+}

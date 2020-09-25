@@ -1,0 +1,11 @@
+package Ex2.Question4;
+
+public class MyMath {
+	public int sum(int a,int b){
+		return a+b;
+	}
+	
+	public byte sum(byte a,byte b){
+		return a+b;
+	}
+}

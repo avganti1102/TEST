@@ -1,0 +1,9 @@
+package Ex6.Question1;
+
+public class VietnamesePhone extends Phone {
+
+	public VietnamesePhone(String name, String numb) {
+		super(name, numb);
+	}
+
+}

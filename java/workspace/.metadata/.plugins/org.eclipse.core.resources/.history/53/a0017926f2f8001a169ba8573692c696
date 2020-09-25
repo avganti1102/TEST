@@ -1,0 +1,37 @@
+package Assignment3;
+
+import java.util.Random;
+
+public class Ex1 {
+	public static void main(String[] args){
+		
+//Q1
+/*
+		float a = 5240.5f;
+		float b = 10970.055f;
+		
+		int c = (int)a;
+		int d = (int)b;
+		System.out.println("Lương Account 1 làm tròn: " + c + "$");
+		System.out.println("Lương Account 2 làm tròn: " + d+ "$");
+		
+//Q2
+		Random rd = new Random();
+		int random = rd.nextInt(100000);
+		String test = String.valueOf(random);
+		String so0 = "00000";
+*/
+		int min = 0;
+		int max = 99999;
+		int a = (int) (Math.random() * max) + min;
+		while (a < 10000) {
+			a = a * 10;
+		}
+		System.out.printf("===Question2======\n");
+		System.out.println("Sá»‘ ngáº«u nhiĂªn: " + a);
+
+		System.out.println("======Question3=======");
+		String b = String.valueOf(a);
+		System.out.println("Hai sá»‘ cuá»‘i: " + b.substring(3));
+	}
+}

@@ -1,0 +1,9 @@
+package Lesson4.Mobile.copy.copy;
+
+public class SamsungS extends Samsung {
+
+	public SamsungS(String name) {
+		super(name);
+	}
+
+}

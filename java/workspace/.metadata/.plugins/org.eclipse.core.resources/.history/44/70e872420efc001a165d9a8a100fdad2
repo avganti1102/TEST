@@ -1,0 +1,9 @@
+package Lesson5.Mobile;
+
+import Lesson4.Mobile.Iphone;
+
+public class main {
+	public static void main(String[] args) {
+		Iphone ad = new Iphone("Iphone 3");
+	}
+}

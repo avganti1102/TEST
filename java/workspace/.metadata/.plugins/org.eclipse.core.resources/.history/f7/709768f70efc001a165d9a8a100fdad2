@@ -1,0 +1,8 @@
+package Lesson5;
+
+public class Polymorphism {
+	/*
+	 * - Class reference(Data type) refer Objects
+	 * VD: Person p = new Student();
+	 */
+}

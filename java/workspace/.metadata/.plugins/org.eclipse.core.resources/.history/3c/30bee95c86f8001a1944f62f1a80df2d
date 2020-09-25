@@ -1,0 +1,11 @@
+import java.util.Date;
+
+public class Question {
+	int ID;
+	String content;
+	categoryQuestion category;
+	typeQuestion typeID;
+	Account creatorID;
+	Date createDate;
+	
+}

@@ -1,0 +1,5 @@
+package Lesson4.Mobile;
+
+public class iPhone extends Mobile {
+	String name;
+}

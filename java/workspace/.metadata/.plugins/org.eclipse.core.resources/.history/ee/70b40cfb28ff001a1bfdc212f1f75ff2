@@ -1,0 +1,8 @@
+package Lesson7;
+
+public class FinalPerson extends Person {
+	public void finalMethod() {
+		
+	}
+
+}

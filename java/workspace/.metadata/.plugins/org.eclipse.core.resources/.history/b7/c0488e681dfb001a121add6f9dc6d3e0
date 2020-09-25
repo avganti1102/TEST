@@ -1,0 +1,5 @@
+package Ex5.Question3;
+
+public abstract class Person {
+	private String name;
+}

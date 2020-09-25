@@ -1,0 +1,5 @@
+package Question1_2.copy2;
+
+public enum Gender {
+	MALE,FEMALE,UNKNOWN;
+}

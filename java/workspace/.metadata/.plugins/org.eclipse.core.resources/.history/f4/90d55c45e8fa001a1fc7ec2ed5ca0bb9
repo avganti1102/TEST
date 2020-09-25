@@ -1,0 +1,6 @@
+package Ex5;
+
+public class KySu extends CanBo{
+	private String nganhDaoTao;
+	
+}

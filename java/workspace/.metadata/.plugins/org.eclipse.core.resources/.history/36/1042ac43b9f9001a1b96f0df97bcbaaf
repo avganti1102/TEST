@@ -1,0 +1,11 @@
+package Lesson4.Mobile;
+
+public class iPhone extends Mobile {
+	public iPhone(String name) {
+		super(name);
+		this.OS = "IOS";
+	}
+
+	String name;
+	
+}

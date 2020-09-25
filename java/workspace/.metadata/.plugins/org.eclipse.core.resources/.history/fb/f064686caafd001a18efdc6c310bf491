@@ -1,0 +1,6 @@
+package Lesson7;
+//static
+public class Person {
+	public static int id; //
+	public int age;
+}

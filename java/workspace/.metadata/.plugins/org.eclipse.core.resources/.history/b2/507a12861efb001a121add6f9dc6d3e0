@@ -1,0 +1,12 @@
+package Ex5.Question3;
+
+public class HighSchoolStudent extends Student {
+	private String clazz;
+	private String desiredUniversity;
+	
+	public HighSchoolStudent(String name, short i,String clazz,String desiredUniversity) {
+		super(name, i);
+		this.clazz = clazz;
+		this.desiredUniversity = desiredUniversity;
+	}
+}

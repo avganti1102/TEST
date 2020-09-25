@@ -1,0 +1,23 @@
+package Assignment3;
+
+public class Ex5 {
+	public static void main(String[] args) {
+// Create Department
+		Department department1 = new Department();
+		department1.ID = 1;
+		department1.Name = "Sale";
+
+		Department department2 = new Department();
+		department2.ID = 2;
+		department2.Name = "Marketting";
+
+		Department department3 = new Department();
+		department3.ID = 3;
+		department3.Name = "Security";
+		
+		
+		
+// Q6
+
+	}
+}

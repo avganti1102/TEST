@@ -1,0 +1,10 @@
+package Ex6.Question1;
+
+public class main {
+
+	public static void main(String[] args) {
+		Phone[] p = new Phone[1];
+		
+	}
+
+}

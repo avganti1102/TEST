@@ -1,0 +1,48 @@
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.Scanner;
+
+public class Ex2 {
+	
+	public static void Q1(int x){
+		System.out.printf("%d\n",x);
+	}
+	
+	public static void Q2(int x){
+		System.out.printf("%,d\n",x);
+	}
+	
+	public static void Q3(double x){
+		System.out.printf("%.4f\n",x);
+	}
+	
+	public static void Q4(){
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Họ và tên: " );
+		String str = sc.nextLine();
+		System.out.printf("Tên tôi là %s và tôi đang độc thân \n",str);
+	}
+	
+	public static void Q5(){
+		String pattern = "dd/MM/yyyy hh:mm:ss";
+	    SimpleDateFormat sd = new SimpleDateFormat(pattern);
+	    String date = sd.format(new Date());
+	    System.out.println(date);
+	}
+	
+	public static void Q6(){
+		System.out.println("ID   email                  Username         FullName         departmentID        CreateDate ");
+		System.out.printf("%s    %s     %s          %s   %s %s\n",acc1.ID,acc1.email,acc1.userName,acc1.fullName,acc1.departmentID,acc1.createDate);
+
+	}
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Q1(5);
+		Q2(100000000);
+		Q3(3.12125);
+		Q4();
+	    Q5();
+	}
+
+}

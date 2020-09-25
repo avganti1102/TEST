@@ -1,0 +1,8 @@
+package Ex2.Question3;
+
+public class main {
+	public static void main(String[] args) {
+		HCN hv = new HV(1.5d);
+		HCN hcn = new HCN(2.3d, 3.5)
+	}
+}

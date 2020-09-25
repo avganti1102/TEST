@@ -1,0 +1,6 @@
+package Ex6.Question2_3;
+
+public class User {
+	private String name;
+	private double salaryRatio;
+}

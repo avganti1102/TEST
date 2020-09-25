@@ -1,0 +1,9 @@
+package Lesson5;
+
+public class Polymorphism {
+	/*
+	 * - Class reference(Data type) refer Objects
+	 * VD: Person p = new Student();
+	 * - Áp dụng cho các bài toán lquan đến quản lý ( array(cán bộ))
+	 */
+}

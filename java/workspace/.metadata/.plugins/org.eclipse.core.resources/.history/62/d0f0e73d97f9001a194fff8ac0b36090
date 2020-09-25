@@ -1,0 +1,402 @@
+import java.util.Scanner;
+
+public class StringEx4 {
+
+	public static void main(String[] args) {
+		question1();
+		question2();
+		question3();
+		question4();
+		question5();
+		question6();
+		question7();
+		question8();
+		question9();
+		question10();
+		question11();
+		question12();
+		question13();
+		question14();
+		question15();
+		question16();
+	}
+
+	// Question 1:
+	/*
+	// Nháº­p má»™t xĂ¢u kĂ­ tá»±, Ä‘áº¿m sá»‘ lÆ°á»£ng cĂ¡c tá»« trong xĂ¢u kĂ­ tá»± Ä‘Ă³ (cĂ¡c tá»« cĂ³
+	// thá»ƒ cĂ¡ch nhau báº±ng nhiá»�u khoáº£ng tráº¯ng );
+	public static void question1() {
+		String s1;
+		Scanner scanner = new Scanner(System.in);
+
+		System.out.println("Nháº­p chuá»—i: ");
+		s1 = scanner.nextLine();
+
+		String[] words = s1.split(" ");
+		System.out.println("Sá»‘ kĂ­ tá»±: " + words.length);
+
+		scanner.close();
+	}
+
+	// Question 2:
+	// Nháº­p hai xĂ¢u kĂ­ tá»± s1, s2 ná»‘i xĂ¢u kĂ­ tá»± s2 vĂ o sau xĂ¢u s1;
+	public static void question2() {
+		Scanner scanner = new Scanner(System.in);
+
+		System.out.println("Nháº­p chuá»—i 1: ");
+		String s1 = scanner.nextLine();
+
+		System.out.println("Nháº­p chuá»—i 2: ");
+		String s2 = scanner.nextLine();
+
+		System.out.println("Sau khi ná»‘i chuá»—i : " + s1.concat(s2));
+
+		scanner.close();
+	}
+
+	// Question 3:
+	// Viáº¿t chÆ°Æ¡ng trĂ¬nh Ä‘á»ƒ ngÆ°á»�i dĂ¹ng nháº­p vĂ o tĂªn vĂ  kiá»ƒm tra, náº¿u tĂªn chÆ°a
+	// viáº¿t hoa chá»¯ cĂ¡i Ä‘áº§u thĂ¬ viáº¿t hoa lĂªn
+	public static void question3() {
+		Scanner scanner = new Scanner(System.in);
+		String name;
+
+		System.out.println("Nháº­p TĂªn: ");
+		name = scanner.nextLine();
+
+		String firstCharacter = name.substring(0, 1).toUpperCase();
+
+		String leftCharacter = name.substring(1);
+
+		name = firstCharacter + leftCharacter;
+
+		System.out.println(name);
+
+		scanner.close();
+	}
+
+	// Question 4:
+	// Viáº¿t chÆ°Æ¡ng trĂ¬nh Ä‘á»ƒ ngÆ°á»�i dĂ¹ng nháº­p vĂ o tĂªn in tá»«ng kĂ½ tá»± trong tĂªn
+	// cá»§a ngÆ°á»�i dĂ¹ng ra
+	// VD:
+	// NgÆ°á»�i dĂ¹ng nháº­p vĂ o "Nam", há»‡ thá»‘ng sáº½ in ra
+	// "KĂ½ tá»± thá»© 1 lĂ : N"
+	// "KĂ½ tá»± thá»© 1 lĂ : A"
+	// "KĂ½ tá»± thá»© 1 lĂ : M"
+	public static void question4() {
+		String name;
+		Scanner scanner = new Scanner(System.in);
+
+		System.out.println("Nháº­p tĂªn: ");
+		name = scanner.nextLine();
+
+		name = name.toUpperCase();
+
+		for (int i = 0; i < name.length(); i++) {
+			System.out.println("KĂ½ tá»± thá»© " + i + " lĂ : " + name.charAt(i));
+		}
+
+		scanner.close();
+	}
+
+	// Question 5:
+	// Viáº¿t chÆ°Æ¡ng trĂ¬nh Ä‘á»ƒ ngÆ°á»�i dĂ¹ng nháº­p vĂ o há»�, sau Ä‘Ă³ yĂªu cáº§u ngÆ°á»�i
+	// dĂ¹ng nháº­p vĂ o tĂªn vĂ  há»‡ thá»‘ng sáº½ in ra há»� vĂ  tĂªn Ä‘áº§y Ä‘á»§
+	public static void question5() {
+		Scanner scanner = new Scanner(System.in);
+
+		System.out.println("Nháº­p há»�: ");
+		String firstName = scanner.nextLine();
+
+		System.out.println("Nháº­p tĂªn: ");
+		String lastName = scanner.nextLine();
+
+		System.out.println("Há»� tĂªn Ä‘áº§y Ä‘á»§: " + firstName.concat(lastName));
+
+		scanner.close();
+
+	}
+
+	// Question 6:
+	// Viáº¿t chÆ°Æ¡ng trĂ¬nh yĂªu cáº§u ngÆ°á»�i dĂ¹ng nháº­p vĂ o há»� vĂ  tĂªn Ä‘áº§y Ä‘á»§ vĂ 
+	// sau Ä‘Ă³ há»‡ thá»‘ng sáº½ tĂ¡ch ra há»�, tĂªn , tĂªn Ä‘á»‡m
+	// VD:
+	// NgÆ°á»�i dĂ¹ng nháº­p vĂ o "Nguyá»…n VÄƒn Nam"
+	// Há»‡ thá»‘ng sáº½ in ra
+	// "Há»� lĂ : Nguyá»…n"
+	// "Há»� lĂ : VÄƒn"
+	// "Há»� lĂ : Nam"
+	public static void question6() {
+		String fullName;
+		String lastName = "", middleName = "", firstName = "";
+
+		Scanner scanner = new Scanner(System.in);
+
+		System.out.println("Nháº­p há»� tĂªn Ä‘áº§y Ä‘á»§:");
+		fullName = scanner.nextLine();
+
+		// Chuáº©n hĂ³a xĂ¢u
+		fullName = fullName.trim();
+
+		String[] words = fullName.split(" ");
+
+		lastName = words[0];
+		firstName = words[words.length - 1];
+
+		for (int i = 1; i <= words.length - 2; i++) {
+			middleName += words[i] + " ";
+		}
+
+		System.out.println("Há»� lĂ : " + lastName);
+		System.out.println("TĂªn Ä‘á»‡m lĂ : " + middleName);
+		System.out.println("TĂªn lĂ : " + firstName);
+
+		scanner.close();
+	}
+
+	// Question 7:
+	// Viáº¿t chÆ°Æ¡ng trĂ¬nh yĂªu cáº§u ngÆ°á»�i dĂ¹ng nháº­p vĂ o há»� vĂ  tĂªn Ä‘áº§y Ä‘á»§ vĂ 
+	// chuáº©n hĂ³a há»� vĂ  tĂªn cá»§a há»� nhÆ° sau:
+	// a) XĂ³a dáº¥u cĂ¡ch á»Ÿ Ä‘áº§u vĂ  cuá»‘i cá»§a chuá»—i ngÆ°á»�i dĂ¹ng nháº­p vĂ o
+	// VD: Náº¿u ngÆ°á»�i dĂ¹ng nháº­p vĂ o " nguyá»…n vÄƒn nam " thĂ¬ sáº½
+	// chuáº©n hĂ³a thĂ nh "nguyá»…n vÄƒn nam"
+	// b) Viáº¿t hoa chá»¯ cĂ¡i má»—i tá»« cá»§a ngÆ°á»�i dĂ¹ng
+	// VD: Náº¿u ngÆ°á»�i dĂ¹ng nháº­p vĂ o " nguyá»…n vÄƒn nam " thĂ¬ sáº½
+	// chuáº©n hĂ³a thĂ nh "Nguyá»…n VÄƒn Nam"
+	public static void question7() {
+
+		Scanner scanner = new Scanner(System.in);
+		String fullName;
+
+		System.out.println("Nháº­p há»� tĂªn Ä‘áº§y Ä‘á»§");
+		fullName = scanner.nextLine();
+
+		scanner.close();
+
+		// remove space characters
+		fullName = fullName.trim();
+		fullName = fullName.replaceAll("\\s+", " ");
+
+		String[] words = fullName.split(" ");
+		fullName = "";
+
+		for (String word : words) {
+			String firstCharacter = word.substring(0, 1).toUpperCase();
+			String leftCharacter = word.substring(1);
+			word = firstCharacter + leftCharacter;
+
+			fullName += word + " ";
+		}
+
+		System.out.println("Há»� tĂªn sau khi chuáº©n hĂ³a: " + fullName);
+	}
+
+	// Question 8:
+	// In ra táº¥t cáº£ cĂ¡c group cĂ³ chá»©a chá»¯ "Java"
+	public static void question8() {
+		String[] groupNames = { "Java with Duy Nguyá»…n", "CĂ¡ch qua mĂ´n gia va", "Há»�c Java cĂ³ khĂ³ khĂ´ng?" };
+
+		for (String groupName : groupNames) {
+			if (groupName.contains("Java")) {
+				System.out.println(groupName);
+			}
+		}
+	}
+
+	// Question 9:
+	// In ra táº¥t cáº£ cĂ¡c group "Java"
+	public static void question9() {
+		String[] groupNames = { "Java", "C#", "C++" };
+
+		for (String groupName : groupNames) {
+			if (groupName.equals("Java")) {
+				System.out.println(groupName);
+			}
+		}
+	}
+
+	// Question 10:
+	// Kiá»ƒm tra 2 chuá»—i cĂ³ lĂ  Ä‘áº£o ngÆ°á»£c cá»§a nhau hay khĂ´ng.
+	// Náº¿u cĂ³ xuáº¥t ra â€œOKâ€� ngÆ°á»£c láº¡i â€œKOâ€�.
+	// VĂ­ dá»¥ â€œwordâ€� vĂ  â€œdrowâ€� lĂ  2 chuá»—i Ä‘áº£o ngÆ°á»£c nhau.
+	public static void question10() {
+		Scanner scanner = new Scanner(System.in);
+		String s1, s2, reverseS1 = "";
+
+		System.out.println("Nháº­p chuá»—i 1");
+		s1 = scanner.nextLine();
+
+		System.out.println("Nháº­p chuá»—i 2");
+		s2 = scanner.nextLine();
+
+		scanner.close();
+
+		for (int i = s1.length() - 1; i >= 0; i--) {
+			reverseS1 += s1.substring(i, i + 1);
+		}
+
+		if (s2.equals(reverseS1)) {
+			System.out.println("Ä�Ă¢y lĂ  chuá»—i Ä‘áº£o ngÆ°á»£c !");
+		}
+
+	}
+
+	// Question 11: Count special Character
+	// TĂ¬m sá»‘ láº§n xuáº¥t hiá»‡n kĂ½ tá»± "a" trong chuá»—i
+	public static void question11() {
+		Scanner scanner = new Scanner(System.in);
+		String str;
+
+		System.out.println("Má»�i báº¡n nháº­p vĂ o má»™t chuá»—i: ");
+		str = scanner.nextLine();
+
+		scanner.close();
+
+		int count = 0;
+		for (int i = 0; i < str.length(); i++) {
+			if ('a' == str.charAt(i)) {
+				count++;
+			}
+		}
+
+		System.out.println(count);
+	}
+
+	// Question 12: Reverse String
+	// Ä�áº£o ngÆ°á»£c chuá»—i sá»­ dá»¥ng vĂ²ng láº·p
+	public static void question12() {
+		Scanner scanner = new Scanner(System.in);
+		String s1, reverseS1 = "";
+
+		System.out.println("Nháº­p chuá»—i 1");
+		s1 = scanner.nextLine();
+
+		for (int i = s1.length() - 1; i >= 0; i--) {
+			reverseS1 += s1.charAt(i);
+		}
+
+		System.out.println(reverseS1);
+
+		scanner.close();
+
+	}
+
+	// Question 13: String not contains digit
+	// Kiá»ƒm tra má»™t chuá»—i cĂ³ chá»©a chá»¯ sá»‘ hay khĂ´ng, náº¿u cĂ³ in ra false ngÆ°á»£c láº¡i
+	// true.
+	// VĂ­ dá»¥:
+	// "abc" => true
+	// "1abc", "abc1", "123", "a1bc", null => false
+	public static void question13() {
+		Scanner scanner = new Scanner(System.in);
+		String str;
+
+		System.out.println("Nháº­p chuá»—i: ");
+		str = scanner.nextLine();
+
+		scanner.close();
+
+		for (int i = 0; i < str.length(); i++) {
+			if (checkKeyNumber(str.charAt(i))) {
+				System.out.println("False");
+				return;
+			}
+
+		}
+
+		System.out.println("True");
+	}
+
+	public static boolean checkKeyNumber(char ch) {
+		if (ch >= '0' && ch <= '9') {
+			return true;
+		}
+		return false;
+	}
+
+	// Question 14: Replace character
+	// Cho má»™t chuá»—i str, chuyá»ƒn cĂ¡c kĂ½ tá»± Ä‘Æ°á»£c chá»‰ Ä‘á»‹nh sang má»™t kĂ½ tá»± khĂ¡c
+	// cho trÆ°á»›c.
+	// VĂ­ dá»¥:
+	// "VTI Academy" chuyá»ƒn kĂ½ tá»± 'e' sang '*' káº¿t quáº£ " VTI Acad*my"
+	public static void question14() {
+		Scanner scanner = new Scanner(System.in);
+		String str;
+		char ch1, ch2;
+
+		System.out.println("Nháº­p chuá»—i: ");
+		str = scanner.nextLine();
+
+		System.out.println("Nháº­p kĂ­ tá»± muá»‘n chuyá»ƒn: ");
+		ch1 = scanner.nextLine().toCharArray()[0];
+
+		System.out.println("Nháº­p kĂ­ tá»± sáº½ chuyá»ƒn: ");
+		ch2 = scanner.nextLine().toCharArray()[0];
+
+		scanner.close();
+
+		for (int i = 0; i < str.length(); i++) {
+			if (str.charAt(i) == ch1) {
+				str = str.replace(ch1, ch2);
+			}
+		}
+
+		System.out.println("Chuoi sau khi chuyen: " + str);
+	}
+
+	// Question 15: Revert string by word
+	// Ä�áº£o ngÆ°á»£c cĂ¡c kĂ½ tá»± cá»§a chuá»—i cĂ¡ch nhau bá»Ÿi dáº¥u cĂ¡ch mĂ  khĂ´ng dĂ¹ng
+	// thÆ° viá»‡n.
+	// VĂ­ dá»¥: " I am developer " => "developer am I".4
+	// CĂ¡c kĂ½ tá»± bĂªn trong chá»‰ cĂ¡ch nhau Ä‘Ăºng má»™t dáº¥u khoáº£ng cĂ¡ch.
+	// Gá»£i Ă½: CĂ¡c báº¡n cáº§n loáº¡i bá»� dáº¥u cĂ¡ch á»Ÿ Ä‘áº§u vĂ  cuá»‘i cĂ¢u, thao tĂ¡c cáº¯t
+	// chuá»—i theo dáº¥u cĂ¡ch
+	public static void question15() {
+		Scanner scanner = new Scanner(System.in);
+		String str;
+
+		System.out.println("Chuá»—i: ");
+		str = scanner.nextLine();
+
+		scanner.close();
+
+		str = str.trim();
+		str = str.replaceAll("\\s+", " ");
+
+		String[] words = str.split(" ");
+
+		for (int i = words.length - 1; i >= 0; i--) {
+			System.out.print(words[i] + " ");
+		}
+	}
+
+	// Question 16:
+	// Cho má»™t chuá»—i str vĂ  sá»‘ nguyĂªn n >= 0. Chia chuá»—i str ra lĂ m cĂ¡c pháº§n
+	// báº±ng nhau vá»›i n kĂ½ tá»±. Náº¿u chuá»—i khĂ´ng chia Ä‘Æ°á»£c thĂ¬ xuáº¥t ra mĂ n
+	// hĂ¬nh â€œKOâ€�.
+	@SuppressWarnings("resource")
+	public static void question16() {
+		Scanner scanner = new Scanner(System.in);
+		String str;
+		int n;
+
+		System.out.println("Chuá»—i: ");
+		str = scanner.nextLine();
+
+		System.out.println("Nháº­p n: ");
+		n = scanner.nextInt();
+
+		scanner.close();
+
+		if (str == null || str.isEmpty() || str.length() % n != 0) {
+			System.out.println("No");
+			return;
+		}
+
+		for (int i = 0; i < str.length(); i += n) {
+			System.out.println(str.substring(i, i + n));
+		}
+
+	}
+}
+*/

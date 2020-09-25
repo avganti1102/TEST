@@ -1,0 +1,19 @@
+package Assignment4;
+
+import java.util.Scanner;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Student s = new Student("Dzung","HN");
+		Scanner sc = new Scanner(System.in);
+		byte score;
+		do{
+			score = sc.nextByte();
+			System.out.println("Nhập lại");
+		}while(score <=  10 && score >= 0);
+		s.setScore(score);
+		s.info();
+	}
+
+}

@@ -1,0 +1,14 @@
+package Assignment3;
+
+public class Ex2 {
+	public void registry(){
+		Account[] acc = new Account[5];
+		for(int i = 0; i < 5; i++){
+			System.out.println("Nhập email: ");
+			acc[i+1].email = sc.nextLine();
+		}
+	}
+	public static void Main(String[] args){
+		
+	}
+}

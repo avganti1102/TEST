@@ -1,0 +1,13 @@
+package Lesson6;
+
+import java.io.File;
+import java.io.FileInputStream;
+
+import javax.print.DocFlavor.INPUT_STREAM;
+
+public class Main1 {
+	public static void main(String[] args) {
+		File file = new File("F:\\VTI");
+		fileInputStream fileInputStream = new FileInputStream(file);
+	}
+}

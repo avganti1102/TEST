@@ -1,0 +1,7 @@
+package Ex2.Question5;
+
+public abstract class Phone {
+	public void hear(){
+		System.out.println("Nghe điện");
+	}
+}

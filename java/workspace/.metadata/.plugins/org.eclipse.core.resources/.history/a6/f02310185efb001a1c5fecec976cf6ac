@@ -1,0 +1,13 @@
+package Ex5.Question4;
+
+public class TapChi extends ThuVien {
+	private int soPhatHanh;
+	private byte thangPhatHanh;
+
+	public TapChi(String maTaiLieu, String NXB, int soBanPhatHanh, int soPhatHanh, byte thangPhatHanh) {
+		super(maTaiLieu, NXB, soBanPhatHanh);
+		this.soPhatHanh = soBanPhatHanh;
+		this.thangPhatHanh = thangPhatHanh;
+	}
+
+}

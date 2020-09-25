@@ -1,0 +1,9 @@
+package Lesson6;
+
+import java.io.IOException;
+
+public class Person {
+	public int chia(int a,int b) throws IOException{
+		return a/b;
+	}
+}

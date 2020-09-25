@@ -1,0 +1,15 @@
+package Assignment3;
+
+public class Ex3 {
+	
+	public static void main(String[] args){
+//Q1
+		int salary = 5000;
+		float a = (float)salary;
+		System.out.printf("%.2f\n",a);
+//Q2
+		String str = "1234567";
+		int integer = Integer.valueOf(str);
+		System.out.println(integer);
+	}
+}

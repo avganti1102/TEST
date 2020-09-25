@@ -1,0 +1,11 @@
+package Ex6.Question1;
+
+public class Phone extends Contact{
+	private Contact[] c;
+
+	public Phone(Contact[] c) {
+		this.c = c;
+	}
+
+	
+}

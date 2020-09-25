@@ -1,0 +1,31 @@
+package Assignment3;
+
+import java.util.Random;
+
+public class Ex1 {
+	public static void main(String[] args){
+		
+//Q1
+/*
+		float a = 5240.5f;
+		float b = 10970.055f;
+		
+		int c = (int)a;
+		int d = (int)b;
+		System.out.println("Lương Account 1 làm tròn: " + c + "$");
+		System.out.println("Lương Account 2 làm tròn: " + d+ "$");*/
+		
+//Q2
+		Random rd = new Random();
+		int random = rd.nextInt(100000);
+		String test = String.valueOf(random);
+		String so = "";
+		String result = "";
+		for (int i = 5; i > test.length() ; i--) {
+			so += "0";
+			result = so.concat(test);
+			System.out.println(result);
+		}
+
+	}
+}

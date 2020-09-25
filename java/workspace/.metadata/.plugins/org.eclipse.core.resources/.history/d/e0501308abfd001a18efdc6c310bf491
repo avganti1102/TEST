@@ -1,0 +1,12 @@
+package Lesson7;
+
+public class main {
+	public static void main(String[] args) {
+		/*
+		 * -----static------
+		 * 
+		 */
+		Person p1 = new Person();
+		System.out.println(p1.getIdPerson());
+	}
+}

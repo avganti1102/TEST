@@ -1,0 +1,17 @@
+package Lesson3.subPackage1;
+
+import java.util.Random;
+
+public class subMain {
+	public static void so(){
+		Random rd = new Random();
+		int hang = 100000;
+		int numb = rd.nextInt(100000);
+	}
+
+	public static void main(String[] args) {
+		Person p = new Person();
+		System.out.println(p.id);
+	}
+
+}

@@ -1,0 +1,20 @@
+package Ex5.Question4;
+
+public class Sach extends ThuVien {
+	private String tacGia;
+	private int soTrang;
+
+	public Sach(String maTaiLieu, String NXB, int soBanPhatHanh, String tacGia,int soTrang) {
+		super(maTaiLieu, NXB, soBanPhatHanh);
+		this.tacGia = tacGia;
+		this.soTrang = soTrang;
+	}
+	
+	@Override
+	public void input() {
+		Scanner sc = new Scanner(System.in);
+		super.input();
+		System.out.println("Tên tác giả: ");
+	}
+	
+}

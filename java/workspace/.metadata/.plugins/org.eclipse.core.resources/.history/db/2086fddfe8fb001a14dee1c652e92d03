@@ -1,0 +1,27 @@
+package Ex6.Question1;
+
+import java.util.Scanner;
+
+public abstract class Phone extends Contact{
+	private Contact[] c;
+	public Phone(String name, String numb) {
+		super(name, numb);
+	}
+	
+	public abstract void insertContact(String name,String numb);
+	public abstract void removeContact(String name);
+	public abstract void updateContact(String name,String newNumb);
+	public abstract void searchContact(String name);
+
+//	@Override
+//	public void insertContact(String name, String numb) {
+//		this.setName(name);
+//		this.setNumb(numb);
+//		System.out.println("Tên: " + getName());
+//		System.out.println("SÐT: "+ getNumb());
+//	}
+	
+	
+	
+	
+}

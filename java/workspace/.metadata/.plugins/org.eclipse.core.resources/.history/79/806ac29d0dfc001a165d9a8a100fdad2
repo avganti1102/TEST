@@ -1,0 +1,15 @@
+package Lesson4.Mobile;
+
+public class Iphone extends Mobile {
+
+	public Iphone(String name) {
+		super(name);
+		this.OS = "IOS";
+	}
+	
+	@Override
+	public void call() {
+		System.out.println("Iphone!!");
+	}
+
+}

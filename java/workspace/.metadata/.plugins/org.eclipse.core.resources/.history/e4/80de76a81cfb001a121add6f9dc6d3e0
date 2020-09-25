@@ -1,0 +1,24 @@
+package Question1_2.copy;
+
+import java.util.Scanner;
+
+public class QLCB {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Số cán bộ muốn nhập vào: ");
+		int n = sc.nextInt();
+		CanBo[] dscb = new CanBo[n];
+		for (int i = 0; i < n; i++) {
+			CanBo cb = new CanBo();
+			cb.input();
+			cb = dscb[i];
+			sc.nextLine();
+		}
+		for (int i = 0; i < n; i++) {
+			CanBo cb = new CanBo();
+			cb.info();
+		}
+	}
+
+}

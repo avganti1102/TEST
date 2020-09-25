@@ -1,0 +1,15 @@
+package Ex2.Question3;
+
+public class HCN implements ICalculate {
+	private double chieuDai;
+	private double chieuRong;
+	
+	public HCN(double chieuDai){
+		this.chieuDai = chieuDai;
+	}
+	
+	public HCN(double chieuDai,double chieuRong){
+		this.chieuDai = chieuDai;
+		this.chieuRong = chieuRong;
+	}
+}

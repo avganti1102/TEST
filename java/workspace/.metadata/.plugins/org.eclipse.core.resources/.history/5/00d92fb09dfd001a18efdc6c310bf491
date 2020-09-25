@@ -1,0 +1,11 @@
+package Lesson6;
+
+public class throwAble {
+	/*
+	 * Compile time: quá trình từ .java -> .class
+	 * Runtime: Khi play Java Application(alt+shift + x)
+	 */
+	/*
+	 * --------Throwable
+	 */
+}

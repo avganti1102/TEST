@@ -1,0 +1,19 @@
+package Assignment2;
+
+public class Ex6 {
+	public static void Question1(){
+		
+	}
+	
+	public static void Question2(){
+		for (Account account : accounts) {
+			System.out.println("Email: " + account.email);
+			System.out.println("FullName: " + account.fullName);
+			System.out.println("Department Name: " + account.department.Name);
+		}
+	}
+	public static void main(String[] args) {
+		
+	}
+
+}

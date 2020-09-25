@@ -1,0 +1,19 @@
+package Lesson4;
+
+public class OOP {
+	/*----------OOP----------
+	++ Đóng gói
+	++ Kế thừa
+	++ Trừu tượng
+	++ Đa hình
+	*/
+	/*---------Đóng gói--------
+	 * - Đóng gói dữ liệu(property-private) thành 1 unit
+	 * - Chỉ cung cấp các method(getter, setter) ra ngoài
+	 */
+	Ví dụ:
+		Account : ID, userName, pass
+		-->ID:private
+		-->userName : getter
+		-->pass : setter
+}

@@ -1,0 +1,12 @@
+package Ex5.Question1_2;
+
+public class main {
+
+	public static void main(String[] args) {
+		QLCB cb = new QLCB();
+		cb.addCanBo();
+		cb.show();
+		cb.search();
+	}
+
+}

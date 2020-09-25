@@ -1,0 +1,13 @@
+package Ex5.Question4;
+
+import java.time.LocalDate;
+
+public class Bao extends ThuVien {
+	private LocalDate ngayPhatHanh;
+
+	public Bao(String maTaiLieu, String NXB, int soBanPhatHanh,LocalDate ngayPhatHanh) {
+		super(maTaiLieu, NXB, soBanPhatHanh);
+		this.ngayPhatHanh = ngayPhatHanh;
+	}
+	
+}

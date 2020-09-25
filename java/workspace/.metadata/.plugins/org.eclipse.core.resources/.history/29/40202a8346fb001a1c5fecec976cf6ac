@@ -1,0 +1,75 @@
+package Ex5.Question1_2;
+
+import java.util.Scanner;
+
+
+public class CanBo {
+	private String name;
+	private short age;
+	private Gender gioiTinh;
+	private String diaChi;
+	
+	public String getName() {
+		return name;
+	}
+	public short getAge() {
+		return age;
+	}
+	public Gender getGioiTinh() {
+		return gioiTinh;
+	}
+	public void setGioiTinh(byte gioiTinh) {
+		if (gioiTinh == 0) {
+			this.gioiTinh = Gender.MALE;
+		} else if (gioiTinh == 1) {
+			this.gioiTinh = Gender.FEMALE;
+		} else {
+			this.gioiTinh = Gender.UNKNOWN;
+		}
+	}
+	public String getDiaChi() {
+		return diaChi;
+	}
+	
+	public void input(){
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("Nhập tên: ");
+		name = sc.nextLine();
+		System.out.println("Nhập tuổi: ");
+		age = sc.nextShort();
+		System.out.println("Nhập giới tính: (0: Male, 1: Female)");
+		setGioiTinh(sc.nextByte());
+		System.out.println("Nhập địa chỉ: ");
+		diaChi = sc.nextLine();
+		sc.nextLine();
+		
+	}
+	
+	public void info(){
+		System.out.println("Tên cán bộ: " + getName());
+		System.out.println("Tuổi: "+ getAge());
+		System.out.println("Giới tính: "+ getGioiTinh());
+		System.out.println("Địa chỉ: "+ getDiaChi());
+	}
+	
+	public void setName(String name) {
+		this.name = name;
+	}
+	public void setAge(short age) {
+		this.age = age;
+	}
+	public void setGioiTinh(Gender gioiTinh) {
+		this.gioiTinh = gioiTinh;
+	}
+	public void setDiaChi(String diaChi) {
+		this.diaChi = diaChi;
+	}
+	public boolean check(String otherName){
+		if(name.equals(otherName))
+			return true;
+		else
+			return false;
+	}
+
+}

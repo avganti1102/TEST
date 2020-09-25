@@ -1,0 +1,6 @@
+package Ex2.Question3;
+
+public class HCN {
+	private double chieuDai;
+	private double chieuRong;
+}

@@ -1,0 +1,11 @@
+import java.util.Date;
+
+public class Exam {
+	int ID;
+	String code;
+	String title;
+	categoryQuestion category;
+	int duration;
+	Account creator;
+	Date createDate;
+}

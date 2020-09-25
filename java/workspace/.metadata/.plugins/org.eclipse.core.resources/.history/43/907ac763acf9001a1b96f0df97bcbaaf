@@ -1,0 +1,62 @@
+package Lesson3;
+
+import java.util.Random;
+
+
+public class Main {
+	public void void 5so(){
+		Random rd = new Random(100000);
+		int a = rd.Random(100000)
+		int hang = 10000;
+		while(hang >=1){
+			System.out.print(rd/hang);
+		}
+	}
+
+	public static void main(String[] args) {
+		//-----Unboxing-----
+		//Từ kiểu Wrapper về dạng nguyên thủy
+/*		
+		//-----Boxing------
+		//Từ kiểu nguyên thủy về dạng Wrapper
+		String s1 = "abc";
+		String s2 = "bc";
+		String s3 = new String("abc");
+		System.out.println(s1.equals(s2));
+		System.out.println(s1.equals(s3));
+		
+		System.out.println(s1.hashCode());
+		System.out.println(s2.hashCode());
+		System.out.println(s3.hashCode());
+		//Khi hai đối tượng có equals (giá trị bằng nhau) trả về true
+			//-->Hai đối tượng sẽ có hashCode bằng nhau
+		//Khi hai đối tượng có hashCode bằng nhau
+			//-->equals có thể là true hoặc false
+		
+		Person p = new Person("Dzung");
+		System.out.println(p.name);
+
+		
+		
+		//--------Package-------
+		//Liên quan tính bảo mật, tổ chức code
+		
+		//--------Access_Modifier-----
+		/*
+		 * 				private		protected		 default		public
+		 * class			x			x				x				x
+		 * subclass*					x								x
+		 * package						x				x				x
+		 * world														x
+		 
+		System.out.println(p.name);
+		p.setAge(10);
+		System.out.println(p.getAge());
+	*/	
+		
+		
+		
+		
+	}
+
+}

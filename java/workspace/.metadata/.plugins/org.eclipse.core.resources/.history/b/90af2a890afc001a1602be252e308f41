@@ -1,0 +1,10 @@
+package Lesson5;
+
+public class Abstraction {
+	/*
+	 * --------Trừu tượng----
+	 * -Abstract class mang đầy đủ tính chất của class bình thường
+	 * -Có ít nhất 1 phương thức abstract
+	 * -Không thể khởi tạo instance
+	 */
+}

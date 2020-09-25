@@ -1,0 +1,12 @@
+package Ex5.Question3;
+
+public class Student extends Person {
+	private short id;
+
+	public Student(String name,short id) {
+		super(name);
+		this.id = id;
+		// TODO Auto-generated constructor stub
+	}
+	
+}

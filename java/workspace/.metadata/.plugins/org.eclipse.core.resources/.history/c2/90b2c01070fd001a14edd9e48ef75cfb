@@ -1,0 +1,16 @@
+package Ex2.Question3;
+
+public class HCN implements ICalculate {
+	
+	@Override
+	public void S() {
+		System.out.println("abc");
+	}
+
+	@Override
+	public void P() {
+		System.out.println("cds");
+	}
+	
+
+}

@@ -1,0 +1,10 @@
+package Assignment3;
+import Assignment2.Department;
+
+public class Ex5 {
+	public static void main(String[] args){
+		
+//Q6
+		
+	}
+}

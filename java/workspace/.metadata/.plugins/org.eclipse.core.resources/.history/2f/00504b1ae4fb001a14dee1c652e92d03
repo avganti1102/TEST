@@ -1,0 +1,28 @@
+package Ex6.Question1;
+
+public abstract class Contact {
+	private String numb;
+	public String getNumb() {
+		return numb;
+	}
+
+	public void setNumb(String numb) {
+		this.numb = numb;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+	private String name;
+	
+	public Contact(){}
+	
+	public abstract void insertContact();
+	public abstract void removeContact();
+	public abstract void updateContact();
+	public abstract void searchContact();
+}

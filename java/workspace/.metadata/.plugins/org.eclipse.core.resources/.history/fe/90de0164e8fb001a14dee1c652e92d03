@@ -1,0 +1,11 @@
+package Ex6.Question1;
+
+public class main {
+
+	public static void main(String[] args) {
+		Phone[] dsp = new Phone[1];
+		Phone p = new Phone();
+		p.insertContact("Dzung" , "123456");
+	}
+
+}

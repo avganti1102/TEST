@@ -1,0 +1,15 @@
+package Lesson5.Mobile;
+
+import Lesson4.Mobile.Iphone;
+
+public class main {
+	public static void main(String[] args) {
+		Iphone ad = new Iphone("Iphone 3");
+//		ad.sms("123456", "abc");
+/*		SuTu is - a DongVatAnThit
+		SuTu is - a DongVat
+		SuTu is - a SuTu
+*/
+		SuTu st = new SuTu();
+	}
+}

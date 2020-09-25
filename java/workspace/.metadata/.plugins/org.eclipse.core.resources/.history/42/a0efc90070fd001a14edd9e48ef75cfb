@@ -1,0 +1,9 @@
+package Ex2.Question3;
+
+public class HV extends HCN{
+
+	public HV(double chieuDai) {
+		super(chieuDai);
+	}
+	
+}

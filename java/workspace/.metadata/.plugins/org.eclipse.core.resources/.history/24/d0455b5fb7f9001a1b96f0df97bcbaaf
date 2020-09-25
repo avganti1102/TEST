@@ -1,0 +1,7 @@
+package Lesson4;
+
+import Lesson3.subPackage1.Person;
+
+public class Male extends Person{
+	
+}
