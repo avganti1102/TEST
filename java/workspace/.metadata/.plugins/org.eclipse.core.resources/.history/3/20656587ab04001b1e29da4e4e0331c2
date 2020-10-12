@@ -1,0 +1,11 @@
+package Lesson11;
+
+public class Outer {
+	private int x;
+	
+	class Inner {
+		private int y;
+		
+		pubic 
+	}
+}

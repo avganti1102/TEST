@@ -1,0 +1,35 @@
+package Lesson9;
+
+public class main {
+	List : + ArrayList
+				+ Đọc obj rất nhanh
+				+ không nên dùng khi mảng cần phải insert hay delete liên tục
+				+ Khởi đầu giá trị là 10 nếu giá trị vào nhiều hơn 10 sẽ tăng gấp rưỡi ô nhớ lên và copy hết các phần tử ở dãy ô nhớ cũ sang ô nhớ mới
+		   + LinkedList
+		   		+ Tạo ra để đối tượng bên trong biết đối tượng tiếp theo và trước đó của mình
+		   		+ Insert và xóa đối tượng rất nhanh
+		   		Nhược: - Mất nhiều bộ nhớ hơn vì mỗi node có 3 trường
+		   				-cần duy trì tham chiếu đến nốt trước, tiếp theo
+		   				- Truy cập ngẫu nhiên chậm
+		   + hashList
+		 -add(Object)
+		 -add(index,Object)
+		 -addAll(index,Object)
+		 -clear() : xoa het
+		 -remove(index) : xoa phan tu tại index
+		 -size()
+		 -get(index)
+		 -contains(Object) : ktra xem co Object nay k (true/false)
+		 -isEmpty() : check xem co rong k
+		 -indexOf(Object) : vi tri Object duyet tu trai sang
+		 -lastIndexOf(Object) : vi tri Object duyet tu phai sang(index van tinh tu ben trai)
+		 -set(index,Object1) : set Object co index truyen vao thanh Object1
+		 -toArray() : tra ve mot mang cac Object ma minh muon (arr[])
+		 -subList()
+		 
+		 
+	Set : Là 1 interFace con của Collection, là một tập hợp hoặc cấu trúc dữ liệu không cho phép sự trùng lặp
+		+ HashSet: - LinkedHashSet : duy trì thứ tự các đối tượng được thêm vào
+		+ SortedSet  - NavigableSet - TreeSet : có thể sắp xếp các đối tượng được thêm vào
+	
+}

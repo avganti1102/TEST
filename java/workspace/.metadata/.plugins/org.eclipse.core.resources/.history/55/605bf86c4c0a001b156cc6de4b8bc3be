@@ -1,0 +1,83 @@
+package com.vti.final_exam.frontend;
+
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.sql.SQLException;
+import java.util.List;
+
+import com.vti.final_exam.backend.controller.UserController;
+import com.vti.final_exam.entity.Employee;
+import com.vti.final_exam.entity.Manager;
+import com.vti.final_exam.utils.ScannerUtils;
+
+public class test {
+	
+	private static UserController userController;
+	
+	public static void main(String[] args) throws FileNotFoundException, IOException {
+		userController = new UserController();
+		try {
+			//showProjectByName("3");
+			//showListManager();
+			login();
+		} catch (IOException | SQLException e) {
+			e.printStackTrace();
+		}
+	}
+
+	private static void login() throws SQLException, FileNotFoundException, IOException {
+		UserController uC = new UserController();
+		int choose;
+		choose = ScannerUtils.inputInt("Nhap lai!|");
+		switch(choose) {
+		case 1:
+			System.out.println("Dang nhap Account Manager");
+			System.out.println("Nhap Email:");
+			String emailm = ScannerUtils.inputString("Nhap lai!");
+			System.out.println("Nhap pass word:");
+			String passm = ScannerUtils.inputString("Nhap lai!");
+			if(userController.isManagerExists(emailm, passm))
+				System.out.println("Đăng nhập thành công!");
+			else
+				System.out.println("Email hoặc password không đúng. Kiểm tra lại!");
+			break;
+		case 2:
+			System.out.println("Dang nhap Account Employee");
+			System.out.println("Nhap Email:");
+			String emaile = ScannerUtils.inputString("Nhap lai!");
+			System.out.println("Nhap pass word:");
+			String passe = ScannerUtils.inputString("Nhap lai!");
+			if(userController.isManagerExists(emaile, passe))
+				System.out.println("Đăng nhập thành công!");
+			else
+				System.out.println("Email hoặc password không đúng. Kiểm tra lại!");
+			break;
+		case 3:
+			System.out.println("Quay lai trang chu");
+			break;
+		case 0:
+		}
+	}
+
+	private static void showListManager() throws SQLException, FileNotFoundException, IOException {
+		UserController uC = new UserController();
+		List<Manager> mngs = uC.showListManager();
+		for (Manager mng : mngs) {
+			System.out.println(mng.toString());
+		}
+	}
+
+	private static void showProjectByName(String name) throws FileNotFoundException, IOException, SQLException {
+		UserController uC = new UserController();
+		List<Employee> employees = uC.showProjectByEmployee(name);
+		for (Employee employee : employees) {
+			System.out.println(employee.toString());
+		}
+		List<Manager> managers = uC.showProjectByManager(name);
+		for (Manager manager : managers) {
+			System.out.println(manager.toString());
+		}
+	}
+	
+	
+}

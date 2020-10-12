@@ -1,0 +1,34 @@
+package com.vti.final_exam.frontend;
+
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.sql.SQLException;
+import java.util.List;
+
+import com.vti.final_exam.backend.controller.UserController;
+import com.vti.final_exam.entity.Employee;
+import com.vti.final_exam.entity.Manager;
+
+public class test {
+	
+	private static UserController userController;
+	
+	public static void main(String[] args) throws FileNotFoundException, IOException {
+		userController = new UserController();
+		showProjectByName("1");
+	}
+
+	private static void showProjectByName(String name) throws FileNotFoundException, IOException, SQLException {
+		UserController uC = new UserController();
+		List<Employee> employees = uC.showProjectByEmployee(name);
+		for (Employee employee : employees) {
+			System.out.println(employee.toString());
+		}
+		List<Manager> managers = uC.showProjectByManager(name);
+		for (Manager manager : managers) {
+			System.out.println(manager.toString());
+		}
+	}
+	
+	
+}

@@ -1,0 +1,15 @@
+package com.vti.final_exam.backend.service;
+
+import java.io.FileNotFoundException;
+import java.io.IOException;
+
+import com.vti.final_exam.backend.repository.IUserReponsitory;
+import com.vti.final_exam.backend.repository.UserReponsitory;
+
+public class UserService implements IUserReponsitory, IUserService{
+	private IUserReponsitory userReponsitory;
+	
+	public UserService() throws FileNotFoundException, IOException {
+		userReponsitory = new UserReponsitory();
+	}
+}

@@ -1,0 +1,21 @@
+package backend.controller;
+
+import java.util.List;
+
+import backend.service.IDepartmentService;
+import entity.Department;
+
+public class DepartmentController {
+	private IDepartmentService iDepartmentService;
+	
+	public DepartmentController() {
+		iDepartmentService = new DepartmentService();
+	}
+	
+	public List<Department> showDepartmentList() {
+		return iDepartmentService.showDepartmentList();
+	}
+		
+	}
+	
+}

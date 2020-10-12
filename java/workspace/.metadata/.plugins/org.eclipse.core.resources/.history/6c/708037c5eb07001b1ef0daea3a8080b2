@@ -1,0 +1,30 @@
+package backend.service;
+
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.sql.SQLException;
+import java.util.List;
+
+import backend.repository.DepartmentRepository;
+import backend.repository.IDepartmentRepository;
+import entity.Department;
+
+public class DepartmentService implements IDepartmentService {
+	private IDepartmentRepository iDepartmentRepository;
+	
+	public DepartmentService() throws FileNotFoundException, IOException {
+		iDepartmentRepository = new DepartmentRepository();
+	}
+	
+	@Override
+	public List<Department> showDepartmentList() throws SQLException {
+		return iDepartmentRepository.showDepartmentList();
+	}
+
+	
+	@Override
+	public boolean insertDepartment(String name) throws SQLException {
+		return iDepartmentRepository.insertDepartment(name);
+	}
+
+}

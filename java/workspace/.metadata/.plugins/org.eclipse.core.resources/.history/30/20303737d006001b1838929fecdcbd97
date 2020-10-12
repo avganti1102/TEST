@@ -1,0 +1,15 @@
+package frontend;
+
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.sql.SQLException;
+
+import backend.DepartmentDao;
+import backend.Exercise1;
+
+public class test {
+	public static void main(String[] args) throws FileNotFoundException, IOException, SQLException {
+		Exercise1 exercise1 = new Exercise1();
+		exercise1.connectDB();
+	}
+}

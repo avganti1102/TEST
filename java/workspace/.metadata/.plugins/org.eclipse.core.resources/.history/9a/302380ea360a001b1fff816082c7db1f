@@ -1,0 +1,12 @@
+package com.vti.final_exam.frontend;
+
+import com.vti.finalexam.backend.presentationlayer.UserController;
+
+public class test {
+	
+	private static UserController userController;
+	
+	public static void main(String[] args) {
+		userController = new UserController();
+	}
+}

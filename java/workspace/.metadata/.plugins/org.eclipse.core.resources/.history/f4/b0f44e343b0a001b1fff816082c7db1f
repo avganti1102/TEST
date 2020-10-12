@@ -1,0 +1,33 @@
+package com.vti.final_exam.backend.repository;
+
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.sql.Connection;
+import java.sql.SQLException;
+import java.util.ArrayList;
+import java.util.List;
+
+import com.vti.final_exam.entity.Employee;
+import com.vti.final_exam.entity.Manager;
+import com.vti.final_exam.utils.JdbcUtils;
+
+public class UserReponsitory implements IUserReponsitory {
+	private JdbcUtils jdbcUtils;
+	
+	public UserReponsitory() throws FileNotFoundException, IOException{
+		jdbcUtils = new JdbcUtils();
+	}
+
+	@Override
+	public List<Employee> showDepartmentEmployee(String id) throws SQLException {
+		List<Employee> emps = new ArrayList<>();
+		Connection con = jdbcUtils.connect();
+		return emps;
+	}
+
+	@Override
+	public List<Manager> showProjectByManager(String id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+}

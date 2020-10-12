@@ -1,0 +1,11 @@
+package backend.service;
+
+public class ManagerService implements IManagerService {
+	private IManagerRepository iManagerRepository;
+	
+	@Override
+	public boolean insertManager(String firstName, String lastName, String phone, String email, short expInYear) {
+		return iManagerRepository.insertManager();
+	}
+
+}

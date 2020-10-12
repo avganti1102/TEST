@@ -1,0 +1,15 @@
+package backend;
+
+public class CallProcedure {
+	private DepartmentDao dd;
+	
+	public void deleteDepartmentUsingProcedure(int id) {
+		if(dd.isDepartmentIDExists(id)) {
+			
+		}
+		else {
+			System.out.println("Department is not exists");
+		}
+	}
+	sp_delete_department()
+}

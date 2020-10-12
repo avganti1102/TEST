@@ -1,0 +1,43 @@
+package backend;
+
+import java.io.Serializable;
+import java.util.Scanner;
+
+public class Student implements Serializable {
+	private int id;
+	private String name;
+	
+	public Student() {
+	}
+
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+	
+	public void input() {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Nhập id học sinh: ");
+		setId(sc.nextInt());
+		System.out.println("Nhập tên học sinh: ");
+		setName(sc.nextLine());
+		sc.nextLine();
+	}
+	toString(){}
+	public void show() {
+		System.out.println(" Id: " + getId());
+		System.out.println(" Name: "+ getName());
+	}
+	
+}	

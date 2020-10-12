@@ -1,0 +1,32 @@
+package com.vti.final_exam.frontend;
+
+import java.util.List;
+
+import com.vti.final_exam.backend.controller.UserController;
+import com.vti.final_exam.entity.Employee;
+import com.vti.final_exam.entity.Manager;
+
+public class test {
+	
+	private static UserController userController;
+	
+	public static void main(String[] args) {
+		userController = new UserController();
+		showProjectByManager(")';
+		showProjectByEmployee("")
+	}
+
+	private static void showProjectByName(String name) {
+		UserController uC = new UserController();
+		List<Employee> employees = uC.showProjectByEmployee(name);
+		for (Employee employee : employees) {
+			System.out.println(employee.toString());
+		}
+		List<Manager> managers = uC.showProjectByManager(name);
+		for (Manager manager : managers) {
+			System.out.println(manager.toString());
+		}
+	}
+	
+	
+}

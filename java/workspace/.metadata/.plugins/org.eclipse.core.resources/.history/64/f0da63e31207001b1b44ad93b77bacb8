@@ -1,0 +1,7 @@
+package backend.controller;
+
+import backend.service.IDepartment;
+
+public class DepartmentController {
+	private IDepartmentService iDepartmentService;
+}

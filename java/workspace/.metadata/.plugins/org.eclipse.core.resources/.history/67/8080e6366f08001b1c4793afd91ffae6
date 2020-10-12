@@ -1,0 +1,7 @@
+package backend.service;
+
+import java.sql.SQLException;
+
+public interface IUserService {
+	public boolean insertManager(String firstName,String lastName,String phone, String email,short expInYear) throws SQLException;
+}

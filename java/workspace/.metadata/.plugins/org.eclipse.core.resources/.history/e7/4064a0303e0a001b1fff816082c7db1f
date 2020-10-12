@@ -1,0 +1,31 @@
+package com.vti.final_exam.backend.service;
+
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.sql.SQLException;
+import java.util.List;
+
+import com.vti.final_exam.backend.repository.IUserReponsitory;
+import com.vti.final_exam.backend.repository.UserReponsitory;
+import com.vti.final_exam.entity.Employee;
+import com.vti.final_exam.entity.Manager;
+
+public class UserService implements IUserService{
+	private IUserReponsitory userReponsitory;
+	
+	public UserService() throws FileNotFoundException, IOException {
+		userReponsitory = new UserReponsitory();
+	}
+
+	@Override
+	public List<Employee> showProjectByEmployee(String name) {
+		return userReponsitory.showProjectByEmployee(id);
+	}
+
+
+	@Override
+	public List<Manager> showProjectByManager(String id) throws SQLException {
+		// TODO Auto-generated method stub
+		return userReponsitory.showProjectByManager(id);
+	}
+}

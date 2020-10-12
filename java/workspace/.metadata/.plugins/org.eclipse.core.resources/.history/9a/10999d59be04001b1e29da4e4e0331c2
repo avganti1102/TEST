@@ -1,0 +1,65 @@
+package Lesson11.JDBC;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+import java.util.Scanner;
+
+public class JDBCDemo {
+	
+	public static void main(String[] args) throws SQLException {
+		//B1: ket noi voi DB
+		System.out.println("Nhap value");
+		Scanner sc = new Scanner(System.in);
+		int value = sc.nextInt();		 String dbUrl = "jdbc:mysql://localhost:3306/classicmodels"; 		 //Duong dan den DB
+		 String user = "root";
+		 String password = "";
+		 
+		 Connection con = DriverManager.getConnection(dbUrl, user, password);
+		 
+		 // B2: Tao 1 statement
+		 	//Loai 1: Cau lenh da dc viet tuong minh
+		 String sqlStatement = "Select customerName,country from customers"; //Cau lenh ro rang
+		 Statement stm = con.createStatement(); // Thuc thi nhung cau lenh dc viet ro rang
+		 
+		 String insertStatement = "insert into test1 values(2)"; //Insert
+		 String isStatement = "insert into test1 values (?)";
+		 int value = 2;
+		 
+		 PreparedStatement preStatement = con.prepareStatement(isStatement);
+		 preStatement.setInt(1, value);
+		 
+		 
+		 
+		 //B3: Execute Query va hứng dữ liệu
+		 int effecedRows = stm.executeUpdate(insertStatement); //Dung khi du lieu trong bang thay doi
+		 									//executeUpdate(): Tra ve int so cac hang thay doi
+		 System.out.println(effecedRows);
+		 
+		 int effecedRows2 = preStatement.executeUpdate(isStatement);
+		 
+		// ResultSet rs = stm.executeQuery(sqlStatement); //thuc hien Query len Console
+/*		 
+		 
+		 // B4: Xu ly du lieu tra ve 			//LinkedList
+		 while(rs.next()) {
+			 String customerName = rs.getString("customerName"); // Uu tien***
+			 //String customerName2 = rs.getString(1); // So thu tu column ( bdau tu 1>>)
+			 
+			 String country = rs.getString("country");
+			 System.out.println(customerName + " | " + country);
+		 }
+*/
+		 //B5: Close connect
+		 con.close();
+		 
+		 
+		 
+		 //VD: Insert
+		 
+	}
+	 
+}

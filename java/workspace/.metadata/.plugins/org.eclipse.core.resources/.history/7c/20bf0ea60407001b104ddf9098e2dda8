@@ -1,0 +1,9 @@
+package frontend;
+
+import backend.Basic;
+
+public class test {
+	public static void main(String[] args) {
+		Basic.connectDB();
+	}
+}

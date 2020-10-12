@@ -1,0 +1,15 @@
+package utils.properties;
+
+import java.io.FileInputStream;
+import java.util.Properties;
+
+public class DatabaseProperties {
+	public static final String RESOURCE_URL = "/src/main/java/resources";
+	private Properties pr;
+	
+	public DatabaseProperties() {
+		pr = new Properties();
+		pr.load(new FileInputStream(RESOURCE_URL + "ConfigDataBase.properties"));
+	}
+	
+}

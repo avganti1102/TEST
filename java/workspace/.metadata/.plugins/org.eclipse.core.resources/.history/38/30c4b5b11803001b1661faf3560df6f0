@@ -1,0 +1,10 @@
+package Lesson10;
+
+import java.util.ArrayList;
+
+public class ArrayListDemo {
+	public static void main(String[] args) {
+		ArrayList<Integer> ali = new ArrayList<>(5);
+		System.out.println();
+	}
+}

@@ -1,0 +1,28 @@
+package com.vti.final_exam.backend.controller;
+
+import java.util.List;
+
+import com.vti.final_exam.backend.service.IUserService;
+import com.vti.final_exam.backend.service.UserService;
+import com.vti.final_exam.entity.Employee;
+import com.vti.final_exam.entity.Manager;
+
+public class UserController {
+	private IUserService userService;
+	
+	public UserController() {
+		userService = new UserService();
+	}
+
+	public List<Employee> showProjectByEmployee(String name) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public List<Manager> showProjectByManager(String name) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	
+	
+}

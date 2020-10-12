@@ -1,0 +1,8 @@
+package frontend;
+
+public class UserInterface {
+	public static void main(String[] args) {
+		//Question 1
+		showDepartmentList();
+	}
+}

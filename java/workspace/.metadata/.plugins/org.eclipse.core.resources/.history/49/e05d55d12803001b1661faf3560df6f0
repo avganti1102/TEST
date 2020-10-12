@@ -1,0 +1,20 @@
+package Lesson10;
+
+import java.util.ArrayList;
+import java.util.Collections;
+
+public class CompareMain {
+	public static void main(String[] args) {
+		ArrayList<Person> ps = new ArrayList<>();
+		ps.add(new Person("D",4));
+		ps.add(new Person("B",2));
+		
+		Collections.sort(ps);
+		
+		for (Person person : ps) {
+			System.out.println(person.getName());
+		}
+		
+
+	}
+}

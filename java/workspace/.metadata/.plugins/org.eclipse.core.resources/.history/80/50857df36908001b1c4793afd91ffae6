@@ -1,0 +1,19 @@
+package backend.controller;
+
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.sql.SQLException;
+import backend.service.IManagerService;
+import backend.service.ManagerService;
+
+public class UserController {
+	private IManagerService iManagerService;
+	
+	public UserController() throws FileNotFoundException, IOException {
+		iManagerService = new ManagerService();
+	}
+	
+	public boolean insertManager(String firstName,String lastName,String phone, String email,short expInYear) throws SQLException {
+		return iManagerService.insertManager(firstName,lastName,phone,email,expInYear);
+	}
+}

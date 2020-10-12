@@ -1,0 +1,48 @@
+package com.vti.final_exam.backend.repository;
+
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.sql.Connection;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+import java.util.ArrayList;
+import java.util.List;
+
+import com.vti.final_exam.entity.Employee;
+import com.vti.final_exam.entity.Manager;
+import com.vti.final_exam.utils.JdbcUtils;
+
+import entity.Department;
+
+public class UserReponsitory implements IUserReponsitory {
+	private JdbcUtils jdbcUtils;
+	
+	public UserReponsitory() throws FileNotFoundException, IOException{
+		jdbcUtils = new JdbcUtils();
+	}
+
+	@Override
+	public List<Employee> showDepartmentEmployee(String id) throws SQLException {
+		List<Employee> emps = new ArrayList<>();
+		Connection con = jdbcUtils.connect();
+		Statement stm = con.createStatement();
+		//Select
+		String sql = "SELECT * FROM Department";
+		ResultSet rs = stm.executeQuery(sql);
+		//Add vao List<>
+		while (rs.next()) {
+			Employee department = new Department();
+			department.setId(rs.getInt("DepartmentId"));
+			department.setName(rs.getString("DepartmentName"));
+			departments.add(department);
+			}
+		return emps;
+	}
+
+	@Override
+	public List<Manager> showProjectByManager(String id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+}

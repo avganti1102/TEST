@@ -1,0 +1,24 @@
+package utils;
+
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.sql.Connection;
+
+import utils.properties.DatabaseProperties;
+/**
+ * @author Dzung
+ */
+
+public class JdbcUtils {
+	
+	private Connection con;
+	private DatabaseProperties databaseProperties;
+	
+	public JdbcUtils() throws FileNotFoundException, IOException {
+		databaseProperties = new DatabaseProperties();
+	}
+	
+	public Connection connect() {
+		String url =databaseProperties.getProperty("url")
+	}
+}

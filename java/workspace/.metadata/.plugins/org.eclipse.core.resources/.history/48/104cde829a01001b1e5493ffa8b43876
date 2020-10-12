@@ -1,0 +1,19 @@
+package Lesson9;
+
+public class main {
+	List : + ArrayList
+		   + LinkedList
+		   +
+		 -add(Object)
+		 -add(index,Object)
+		 -clear() : xoa het
+		 -size()
+		 -get(index)
+		 -contains(Object) : ktra xem co Object nay k
+		 -isEmpty() : check xem co rong k
+		 -indexOf(Object) : vi tri Object duyet tu trai sang
+		 -lastIndexOf(Object) : vi tri Object duyet tu phai sang(index van tinh tu ben trai)
+		 -set(index,Object1) : set Object co index truyen vao thanh Object1
+		 -toArray() : tra ve mot mang cac Object ma minh muon (arr[])
+		 -subList()
+}

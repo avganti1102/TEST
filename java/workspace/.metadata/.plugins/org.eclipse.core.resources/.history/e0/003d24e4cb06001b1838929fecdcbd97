@@ -1,0 +1,27 @@
+package backend;
+
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
+import java.util.Properties;
+
+public class Exercise1 {
+	public static void connectDB() throws FileNotFoundException, IOException, SQLException {
+		Properties pr = new Properties();
+		pr.load(new FileInputStream("src/backend/Config.properties"));
+		String dbUrl = pr.getProperty("dbUrl");
+		String user = pr.getProperty("username");
+		String pass = pr.getProperty("password");
+		Connection con = DriverManager.getConnection(dbUrl, user, pass);
+		if(con != null ) {
+			System.out.println("Connect Success!");
+		}
+		else {
+			System.out.println("Cannot connect db");
+		}
+	}
+	
+}

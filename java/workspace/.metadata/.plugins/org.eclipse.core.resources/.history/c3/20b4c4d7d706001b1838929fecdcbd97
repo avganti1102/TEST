@@ -1,0 +1,11 @@
+package entity;
+
+import java.sql.Connection;
+import java.util.Properties;
+
+public class JdbcUtils {
+	private Connection con;
+	private Properties pr;
+	
+	
+}

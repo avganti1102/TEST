@@ -1,0 +1,7 @@
+import java.io.*; 
+public class Mine { 
+	int a;
+public static void main (String args[]) { 
+	
+} 
+}

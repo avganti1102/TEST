@@ -1,0 +1,16 @@
+package Lesson8;
+
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.InputStream;
+
+public class ReadObj {
+	public static void main(String[] args) {
+	try {
+		InputStream is = new FileInputStream("F:\\test1.bin");
+	} catch (FileNotFoundException e) {
+		// TODO Auto-generated catch block
+		e.printStackTrace();
+	}
+	}
+}

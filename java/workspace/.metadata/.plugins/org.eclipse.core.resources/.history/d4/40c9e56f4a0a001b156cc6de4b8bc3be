@@ -1,0 +1,21 @@
+package com.vti.final_exam.backend.service;
+
+import java.sql.SQLException;
+import java.util.List;
+
+import com.vti.final_exam.entity.Employee;
+import com.vti.final_exam.entity.Manager;
+
+public interface IUserService {
+
+	List<Employee> showProjectByEmployee(String name) throws SQLException;
+
+	List<Manager> showProjectByManager(String name) throws SQLException;
+
+	List<Manager> showListManager() throws SQLException;
+
+	boolean isManagerExists();
+
+	boolean isManagerExists(String email, String psw);
+	
+}

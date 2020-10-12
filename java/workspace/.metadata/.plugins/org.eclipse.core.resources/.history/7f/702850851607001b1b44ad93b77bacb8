@@ -1,0 +1,22 @@
+package frontend;
+
+import java.sql.SQLException;
+import java.util.List;
+
+import backend.controller.DepartmentController;
+import entity.Department;
+
+public class UserInterface {
+	public static void main(String[] args) {
+		//Question 1
+		showDepartmentList();
+	}
+	
+	private static void showDepartmentList() throws SQLException {
+		DepartmentController dC = new DepartmentController();
+		List<Department> departments = dC.showDepartmentList();
+		for (Department department : departments) {
+			department.toString();
+		}
+	}
+}

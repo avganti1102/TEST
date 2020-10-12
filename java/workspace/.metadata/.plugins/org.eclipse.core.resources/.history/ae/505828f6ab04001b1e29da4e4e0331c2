@@ -1,0 +1,14 @@
+package Lesson11;
+
+public class Outer {
+	private int x;
+	
+	class Inner {
+		private int y;
+		
+	}
+	public static void main(String[] args) {
+		Outer a = new Outer();
+		Outer.Inner b = new Outer.Inner();
+	}
+}

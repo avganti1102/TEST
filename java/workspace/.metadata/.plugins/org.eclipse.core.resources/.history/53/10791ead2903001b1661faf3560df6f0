@@ -1,0 +1,7 @@
+package Lesson10;
+
+import java.util.Comparator;
+
+public class SortByName implements Comparator<Person>{
+
+}

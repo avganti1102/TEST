@@ -4,7 +4,7 @@ public class HCN{
 	
 	public double S(double a,double b) {
 		System.out.println("Tính diện tích theo hình chữ nhật");
-		return a*b;
+		return a* b ;
 	}
 
 	public double P(double a,double b) {

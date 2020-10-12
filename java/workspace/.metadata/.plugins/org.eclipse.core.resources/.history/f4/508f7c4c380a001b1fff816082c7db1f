@@ -1,0 +1,20 @@
+package com.vti.final_exam.frontend;
+
+import com.vti.final_exam.backend.controller.UserController;
+
+public class test {
+	
+	private static UserController userController;
+	
+	public static void main(String[] args) {
+		userController = new UserController();
+		showProjectByName("");
+	}
+
+	private static void showProjectByName(String name) {
+		UserController uc = new UserController();
+		System.out.println(uc.showProjectByName(name));
+	}
+	
+	
+}

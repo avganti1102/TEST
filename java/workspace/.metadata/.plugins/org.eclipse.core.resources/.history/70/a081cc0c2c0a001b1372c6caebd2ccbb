@@ -1,0 +1,11 @@
+import java.io.*; 
+public class Mine { 
+	class test() {
+		
+	}
+public static void main (String args[]) { 
+	byte b = 10; 
+	b =  (b + 10); // Statement 1 
+	b += 10;
+} 
+}

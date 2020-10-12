@@ -1,0 +1,7 @@
+package com.vti.final_exam.backend;
+
+import com.vti.finalexam.backend.businesslayer.IUserService;
+
+public class UserController {
+	private IUserService userService;
+}

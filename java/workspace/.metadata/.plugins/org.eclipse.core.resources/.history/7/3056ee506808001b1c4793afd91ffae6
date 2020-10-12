@@ -1,0 +1,31 @@
+package utils;
+
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
+
+import utils.properties.DataBaseProperties;
+
+public class JdbcUtils {
+	private Connection con;
+	private DataBaseProperties dbpr;
+	
+	public JdbcUtils() throws FileNotFoundException, IOException {
+		dbpr = new DataBaseProperties();
+	}
+	
+	public Connection connect() throws SQLException {
+		String url = dbpr.getProperty("dbUrl");
+		String name = dbpr.getProperty("username");
+		String pass = dbpr.getProperty("password");
+		
+		con = DriverManager.getConnection(url, name, pass);
+		return con;
+	}
+	
+	public void disconnect() throws SQLException {
+		con.close();
+	}
+}

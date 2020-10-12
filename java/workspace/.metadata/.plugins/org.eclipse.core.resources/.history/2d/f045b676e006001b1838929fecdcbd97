@@ -1,0 +1,10 @@
+package backend;
+
+public class CallProcedure {
+	private DepartmentDao dd;
+	
+	public void deleteDepartmentUsingProcedure() {
+		
+	}
+	sp_delete_department()
+}

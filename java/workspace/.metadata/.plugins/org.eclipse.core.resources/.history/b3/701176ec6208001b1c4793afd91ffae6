@@ -1,0 +1,5 @@
+package backend.service;
+
+public interface IManagerService {
+	public boolean insertManager(String firstName,String lastName,String phone, String email,short expInYear);
+}

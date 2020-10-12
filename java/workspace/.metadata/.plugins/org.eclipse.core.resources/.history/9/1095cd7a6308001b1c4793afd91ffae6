@@ -1,0 +1,18 @@
+package frontend;
+
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.sql.SQLException;
+
+import backend.controller.ManagerController;
+
+public class Test {
+	public static void main(String[] args) {
+		insertManager();
+	}
+
+	private static void insertManager() throws FileNotFoundException, IOException, SQLException {
+		ManagerController mc = new ManagerController();
+		System.out.println(mc.insertManager("Ngoc" , "Dung" , "123456", "email@gmail", (short) 4));
+	}
+}

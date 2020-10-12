@@ -1,0 +1,9 @@
+package Lesson9;
+
+public class main {
+	List : + ArrayList
+		   + LinkedList
+		   +
+		 -add(Object)
+		 -add(index,Object)
+}

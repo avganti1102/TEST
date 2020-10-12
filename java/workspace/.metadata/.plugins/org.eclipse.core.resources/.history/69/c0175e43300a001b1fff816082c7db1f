@@ -1,0 +1,7 @@
+package com.vti.final_exam.entity;
+
+public class Employee extends User {
+	
+	
+
+}

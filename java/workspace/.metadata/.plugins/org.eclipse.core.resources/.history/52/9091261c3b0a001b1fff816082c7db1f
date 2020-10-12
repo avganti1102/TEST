@@ -1,0 +1,29 @@
+package com.vti.final_exam.backend.repository;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import com.vti.final_exam.entity.Employee;
+import com.vti.final_exam.entity.Manager;
+import com.vti.final_exam.utils.JdbcUtils;
+
+public class UserReponsitory implements IUserReponsitory {
+	private JdbcUtils jdbcUtils;
+	
+	public UserReponsitory(){
+		jdbcUtils = new JdbcUtils();
+	}
+
+	@Override
+	public List<Employee> showDepartmentEmployee(String id) {
+		List<Employee> emps = new ArrayList<>();
+		Connection con = jdbcUtils.connect();
+		return con;
+	}
+
+	@Override
+	public List<Manager> showProjectByManager(String id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+}

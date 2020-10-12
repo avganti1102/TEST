@@ -1,0 +1,10 @@
+package frontend;
+
+import backend.DepartmentDao;
+import backend.Exercise1;
+
+public class test {
+	public static void main(String[] args) {
+		
+	}
+}

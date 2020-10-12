@@ -1,0 +1,28 @@
+package frontend;
+
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.sql.SQLException;
+
+import backend.controller.UserController;
+
+public class Test {
+	public static void main(String[] args) {
+		try {
+			insertManager();
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+		} catch (IOException e) {
+			e.printStackTrace();
+		} catch (SQLException e) {
+			e.printStackTrace();
+		} catch (ClassNotFoundException e) {
+			e.printStackTrace();
+		}
+	}
+
+	private static void insertManager() throws FileNotFoundException, IOException, SQLException, ClassNotFoundException {
+		UserController mc = new UserController();
+		System.out.println(mc.insertManager("Ngoc" , "Dung" , "123456", "email@gmail", (short) 4));
+	}
+}

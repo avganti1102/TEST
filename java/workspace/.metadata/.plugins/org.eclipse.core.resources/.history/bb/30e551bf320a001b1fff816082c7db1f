@@ -1,0 +1,11 @@
+package com.vti.final_exam.frontend;
+
+import com.vti.final_exam.entity.Manager;
+import com.vti.final_exam.entity.Project;
+
+public class test {
+	public static void main(String[] args) {
+		Manager a = new Manager(id, fullName, email, password, expInYear);
+		Project b = new Project();
+	}
+}

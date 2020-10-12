@@ -1,0 +1,9 @@
+package com.vti.final_exam.backend.service;
+
+public class UserService {
+	private IUserReponsitory userReponsitory;
+
+	public UserService() {
+		userReponsitory = new UserReponsitory();
+	}
+}

@@ -1,0 +1,18 @@
+package backend.controller;
+
+import java.sql.SQLException;
+
+import backend.service.IManagerService;
+import backend.service.ManagerService;
+
+public class ManagerController {
+	private IManagerService iManagerService;
+	
+	public ManagerController() {
+		iManagerService = new ManagerService();
+	}
+	
+	public boolean insertManager(String firstName,String lastName,String phone, String email,short expInYear) throws SQLException {
+		return iManagerService.insertManager(firstName,lastName,phone,email,expInYear);
+	}
+}

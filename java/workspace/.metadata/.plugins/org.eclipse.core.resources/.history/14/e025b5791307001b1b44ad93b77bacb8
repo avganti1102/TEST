@@ -1,0 +1,19 @@
+package frontend;
+
+import java.util.List;
+
+import backend.controller.DepartmentController;
+import entity.Department;
+
+public class UserInterface {
+	public static void main(String[] args) {
+		//Question 1
+		showDepartmentList();
+	}
+	
+	private static void showDepartmentList() {
+		DepartmentController dC = new DepartmentController();
+		List<Department>
+		dC.showDepartmentList();
+	}
+}

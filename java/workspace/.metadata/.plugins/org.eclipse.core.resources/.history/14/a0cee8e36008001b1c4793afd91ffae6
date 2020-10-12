@@ -1,0 +1,11 @@
+package backend.service;
+
+public class ManagerService implements IManagerService {
+
+	@Override
+	public boolean insertManager(String firstName, String lastName, String phone, String email, short expInYear) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+}

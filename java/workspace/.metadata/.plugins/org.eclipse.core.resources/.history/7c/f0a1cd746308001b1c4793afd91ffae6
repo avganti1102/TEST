@@ -1,0 +1,14 @@
+package frontend;
+
+import backend.controller.ManagerController;
+
+public class Test {
+	public static void main(String[] args) {
+		insertManager();
+	}
+
+	private static void insertManager() {
+		ManagerController mc = new ManagerController();
+		System.out.println(mc.insertManager("Ngoc" , "Dung" , "123456", "email@gmail", (short) 4));
+	}
+}

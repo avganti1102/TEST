@@ -1,0 +1,14 @@
+package com.vti.final_exam.backend.repository;
+
+import java.sql.SQLException;
+import java.util.List;
+
+import com.vti.final_exam.entity.Employee;
+import com.vti.final_exam.entity.Manager;
+
+
+public interface IUserReponsitory {
+	List<Manager> showProjectByManager(String id) throws SQLException;
+	List<Employee> showProjectByEmployee(String id) throws SQLException;
+	List<Manager> showListManager();
+}

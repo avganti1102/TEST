@@ -1,0 +1,18 @@
+package Lesson10;
+
+import java.util.Comparator;
+
+public class SortByPoint implements Comparator<Person>{
+
+
+	@Override
+	public int compare(Person o1, Person o2) {
+		if(o1.getPoint() > o2.getPoint())
+			return 1;
+		else if(o1.getPoint() < o2.getPoint())
+			return -1;
+		else
+			return 0;
+	}
+
+}

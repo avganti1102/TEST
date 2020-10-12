@@ -1,0 +1,13 @@
+package Lesson10;
+
+import java.util.Comparator;
+
+public class SortByPoint implements Comparator<SortByPoint>{
+
+	@Override
+	public int compare(SortByPoint o1, SortByPoint o2) {
+		
+		return 0;
+	}
+
+}

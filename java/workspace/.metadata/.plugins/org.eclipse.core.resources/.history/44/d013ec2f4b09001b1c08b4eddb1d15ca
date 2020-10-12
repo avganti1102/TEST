@@ -1,0 +1,21 @@
+package backend.service;
+
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.sql.SQLException;
+
+import backend.repository.IUserRepository;
+import backend.repository.UserRepository;
+
+public class UserService implements IUserService {
+	private IUserRepository iManagerRepository;
+	
+	public UserService() throws IOException {
+		iManagerRepository = new UserRepository();
+	}
+	@Override
+	public boolean insertManager() throws SQLException {
+		return iManagerRepository.insertManager();
+	}
+
+}

@@ -1,0 +1,15 @@
+package Lesson11;
+
+public class Outer {
+	private int x = 2;
+	
+	class Inner {
+		private int y = 1;
+		
+	}
+	public static void main(String[] args) {
+		Outer a = new Outer();
+		Outer.Inner b = a.new Inner();
+		System.out.println(a.x+ " " + b.y);
+	}
+}

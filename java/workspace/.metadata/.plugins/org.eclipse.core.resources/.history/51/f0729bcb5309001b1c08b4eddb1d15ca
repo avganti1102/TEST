@@ -1,0 +1,52 @@
+package frontend;
+
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.nio.charset.IllegalCharsetNameException;
+import java.sql.SQLException;
+import java.util.List;
+
+import backend.controller.UserController;
+import entity.User;
+
+public class Test {
+	public static void main(String[] args) throws ClassNotFoundException {
+		try {
+			showListManager();
+			showListEmployee();
+			insertManager();
+			updateManager();
+//			deleteManager();
+		} catch (IOException e) {
+			e.printStackTrace();
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+	}
+
+	private static void updateManager() {
+		UserController uc = new UserController();
+		System.out.println(uc.updateManager());
+	}
+
+	private static void showListManager() throws FileNotFoundException, IOException, SQLException {
+		UserController mc = new UserController();
+		List<User> managers = mc.showListManager();
+		for (User manage : managers) {
+			System.out.println(manage.showManager());
+		}
+	}
+	
+	private static void showListEmployee() throws FileNotFoundException, IOException, SQLException {
+		UserController mc = new UserController();
+		List<User> employees = mc.showListEmployee();
+		for (User employee : employees) {
+			System.out.println(employee.showEmployee());
+		}
+	}
+
+	private static void insertManager() throws FileNotFoundException, IOException, SQLException, ClassNotFoundException {
+		UserController mc = new UserController();
+		System.out.println(mc.insertManager());
+	}
+}

@@ -1,0 +1,7 @@
+package backend;
+
+public class MyException {
+	private String message;
+	private String reason;
+	private StackTrace;
+}

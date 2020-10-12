@@ -1,0 +1,171 @@
+package backend;
+
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+
+import common.Department;
+import entity.JdbcUtils;
+
+public class DepartmentDao {
+	private JdbcUtils jdbcUtils;
+	
+	public DepartmentDao() {
+		jdbcUtils = new JdbcUtils();
+	}
+	
+	public List<Department> getDepartments() throws FileNotFoundException, IOException, SQLException{
+		List<Department> departments = new ArrayList<>();
+		//Connect DB
+		Connection con = jdbcUtils.connect();
+		//Create Statement
+		Statement stm = con.createStatement();
+		//Select
+		String sql = "SELECT * FROM Department";
+		ResultSet resultSet = stm.executeQuery(sql);
+		//Add vao List<>
+		while (resultSet.next()) {
+			Department department = new Department();
+			department.setId(resultSet.getInt("DepartmentId"));
+			department.setName(resultSet.getString("DepartmentName"));
+
+			departments.add(department);
+		}
+		//disconnect
+		jdbcUtils.disconnect();
+		return departments;
+	}
+	
+	public void getDepartmentByID() throws Exception {
+		//Connect DB
+		Connection con = jdbcUtils.connect();
+		// Create a statement object
+		Statement stm = con.createStatement();
+		//Execute Query
+		String sql = "SELECT * FROM Department WHERE DepartmentId = 5";
+		ResultSet rs = stm.executeQuery(sql);
+		
+		// Step 5: handling result set
+		if (rs.next()) {
+			Department department = new Department();
+			department.setId(rs.getInt("DepartmentId"));
+			department.setName(rs.getString("DepartmentName"));
+			department.toString();
+			jdbcUtils.disconnect();
+
+		} else {
+			jdbcUtils.disconnect();
+			System.out.println("//");
+		}
+	}
+	
+	public void getDepartmentByID(int id) throws FileNotFoundException, IOException, SQLException {
+		//Connect DB
+		Connection con = jdbcUtils.connect();
+		// Create a statement object
+		String sql = "select * from department where departmentID = ?";
+		PreparedStatement preStm = con.prepareStatement(sql);
+		preStm.setInt(1, id);
+		ResultSet rs = preStm.executeQuery();
+		//Handling result set
+		if (rs.next()) {
+			Department department = new Department();
+			department.setId(rs.getInt("DepartmentId"));
+			department.setName(rs.getString("DepartmentName"));
+			department.toString();
+			jdbcUtils.disconnect();
+
+		} else {
+			jdbcUtils.disconnect();
+			System.out.println("//");
+		}
+	}
+	
+	public boolean isDepartmentNameExists(String name) throws FileNotFoundException, IOException, SQLException {
+		//Connect DB
+		Connection con = jdbcUtils.connect();
+		// Create a statement object
+		String sql = "select * from department where departmentName = ?";
+		PreparedStatement preStm = con.prepareStatement(sql);
+		preStm.setString(1, name);
+		ResultSet rs = preStm.executeQuery();
+		//Handling result set
+		if (rs.next()) {
+			jdbcUtils.disconnect();
+			return true;
+
+		} else {
+			jdbcUtils.disconnect();
+			return false;
+		}
+	}
+	
+	public boolean isDepartmentIDExists(int id) throws FileNotFoundException, IOException, SQLException {
+		//Connect DB
+		Connection con = jdbcUtils.connect();
+		// Create a statement object
+		String sql = "select * from department where departmentID = ?";
+		PreparedStatement preStm = con.prepareStatement(sql);
+		preStm.setInt(1, id);
+		ResultSet rs = preStm.executeQuery();
+		//Handling result set
+		if (rs.next()) {
+			jdbcUtils.disconnect();
+			return true;
+
+		} else {
+			jdbcUtils.disconnect();
+			return false;
+		}
+	}
+	
+	public void createDepartment(String name) throws FileNotFoundException, IOException, SQLException {
+		if(isDepartmentNameExists(name)) {
+			System.out.println("Department is Exists");
+		}
+		else {
+			//Connect DB
+			Connection con = jdbcUtils.connect();
+			// Create a statement object
+			String sql = "insert into department (departmentName) values (?)";
+			PreparedStatement preStm = con.prepareStatement(sql);
+			preStm.setString(1, name);
+			int effecedRows = preStm.executeUpdate();
+			 if(effecedRows == 1) {
+				 System.out.println("Them thanh cong");
+			 }
+			 else {
+				 System.out.println("Them khong thanh cong");
+			 }
+		}
+	}
+	
+	public void updateDepartmentName(int id,String name) throws FileNotFoundException, IOException, SQLException {
+		if(isDepartmentIDExists(id)) {
+			System.out.println("Department is Exists");
+		}
+		else {
+			//Connect DB
+			Connection con = jdbcUtils.connect();
+			// Create a statement object
+			String sql = "insert into department (departmentName) values (?)";
+			PreparedStatement preStm = con.prepareStatement(sql);
+			preStm.setString(1, name);
+			int effecedRows = preStm.executeUpdate();
+			 if(effecedRows == 1) {
+				 System.out.println("Them thanh cong");
+			 }
+			 else {
+				 System.out.println("Them khong thanh cong");
+			 }
+		}
+	}
+	
+}

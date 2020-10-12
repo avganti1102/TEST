@@ -1,0 +1,5 @@
+package utils.properties;
+
+public class DatabaseProperties {
+	public static final String RESOURCE_URL = "/mvndemo/src/main/java/resources";
+}

@@ -1,0 +1,9 @@
+package com.vti.final_exam.backend.repository;
+
+import java.util.List;
+
+
+public interface IUserReponsitory {
+	List<Employee> showDepartmentEmployee();
+	List<Manager> showProjectByManager();
+}

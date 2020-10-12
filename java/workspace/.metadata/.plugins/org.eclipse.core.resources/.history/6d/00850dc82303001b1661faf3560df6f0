@@ -1,0 +1,9 @@
+package Lesson10;
+
+public class Map {
+	/*
+	 * -----------Map----------
+	 * - get(key)
+	 * - getKey(value)
+	 */
+}

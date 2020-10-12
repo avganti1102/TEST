@@ -1,0 +1,9 @@
+package com.vti.final_exam.frontend;
+
+import com.vti.final_exam.entity.Manager;
+
+public class test {
+	public static void main(String[] args) {
+		Manager a = new Manager(id, fullName, email, password, expInYear);
+	}
+}

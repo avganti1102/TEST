@@ -1,0 +1,14 @@
+package backend.repository;
+
+import java.util.List;
+
+import entity.Department;
+
+public class DepartmentRepository implements IDepartmentRepository{
+
+	@Override
+	public List<Department> showDepartmentList() {
+		return null;
+	}
+	
+}

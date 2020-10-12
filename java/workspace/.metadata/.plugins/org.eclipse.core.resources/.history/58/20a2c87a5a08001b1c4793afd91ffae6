@@ -1,0 +1,25 @@
+package entity;
+
+import javax.management.remote.SubjectDelegationPermission;
+
+public class Manager extends User {
+	private short expInYear;
+	
+	public Manager() {}
+	public Manager(String firtName, String lastName,String phone, String email,short expInYear) {
+		super(firtName,lastName,phone,email);
+		this.expInYear = expInYear;
+	}
+	
+	public short getExpInYear() {
+		return expInYear;
+	}
+	public void setExpInYear(short expInYear) {
+		this.expInYear = expInYear;
+	}
+	@Override
+	public String toString() {
+		
+	}
+	
+}

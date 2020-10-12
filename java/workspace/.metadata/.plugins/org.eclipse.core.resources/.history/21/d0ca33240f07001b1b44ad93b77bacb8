@@ -1,0 +1,7 @@
+package utils.properties;
+
+public class DatabaseProperties {
+	
+	public static final String RESOURCE_URL = "/src/main/java/resources";
+	
+}

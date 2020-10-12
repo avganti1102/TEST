@@ -1,0 +1,13 @@
+package front_end;
+
+import backend.entity.Student;
+import common.FileUtils;
+
+public class main {
+
+	public static void main(String[] args) {
+		Student s1 = new Student("1","Hung");
+		Student s2 = new Student("2","Dzung");
+	}
+
+}

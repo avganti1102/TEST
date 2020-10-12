@@ -1,0 +1,10 @@
+package utils;
+
+import java.sql.Connection;
+
+import utils.properties.DatabaseProperties;
+
+public class JdbcUtils {
+	private Connection con;
+	private DatabaseProperties databaseProperties;
+}

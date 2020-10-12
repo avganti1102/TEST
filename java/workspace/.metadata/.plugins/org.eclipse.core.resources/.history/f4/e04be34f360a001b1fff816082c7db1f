@@ -1,0 +1,12 @@
+package com.vti.final_exam.backend.service;
+
+import com.vti.final_exam.backend.repository.IUserReponsitory;
+import com.vti.final_exam.backend.repository.UserReponsitory;
+
+public class UserService {
+	private IUserReponsitory userReponsitory;
+
+	public UserService() {
+		userReponsitory = new UserReponsitory();
+	}
+}

@@ -1,0 +1,19 @@
+package Lesson10;
+
+public class Generic {
+	//Generic trong thuộc tính
+	/*
+	 *
+	public class Person<T extends Number> implements Comparable<Person>{
+	private String name;
+	private int point;
+	private T id;
+
+	public Person(String name,int point,T id) {//Giới hạn Generic
+		 this.name = name;
+		 this.point = point;
+		 this.id = id;
+	 }
+	
+	 */
+}

@@ -1,0 +1,10 @@
+package Lesson11;
+
+public class GarbageCollector {
+	/*
+	 * Garb is:
+	 * - Đối tượng được tạo ra mà k có con trỏ nào trỏ đến
+	 * - Parent của đối tượng k có con trỏ nào trỏ đến
+	 * - Local var
+	 */
+}

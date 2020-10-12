@@ -1,0 +1,7 @@
+package utils;
+
+import java.sql.Connection;
+
+public class JdbcUtils {
+	private Connection con;
+}

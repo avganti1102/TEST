@@ -1,0 +1,32 @@
+package Lesson10;
+
+import java.util.ArrayList;
+import java.util.Collections;
+
+public class CompareMain {
+	public static void main(String[] args) {
+		ArrayList<Person> ps = new ArrayList<>();
+		ps.add(new Person("A",4);
+		ps.add(new Person("B",2);
+		ps.add(new Person("T",3);
+		ps.add(new Person("D",3);
+		
+		Collections.sort(ps,new SortByPoint().thenComparing(new SortByName()));
+		
+		for (Person person : ps) {
+			System.out.println(person.getName());
+		}
+		
+		
+		//Generic thuộc tính
+		Person<String> pp = new Person<String>("ABc",2,"5a");
+		Person<Integer> pp1 = new Person<Integer>("ABc",2,5);
+		Person<Float> pp2 = new Person<Float>("ABc",2,5f);
+		System.out.println(pp1.getId());
+		
+		//Generic trong phương thức
+		int[] list = {1,2,3};
+		String[] list1 = {"a","b","c"};
+		pp.printOut<int[]>(list);
+	}
+}

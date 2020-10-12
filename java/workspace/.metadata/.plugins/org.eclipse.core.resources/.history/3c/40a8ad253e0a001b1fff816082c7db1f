@@ -1,0 +1,14 @@
+package com.vti.final_exam.backend.service;
+
+import java.util.List;
+
+import com.vti.final_exam.entity.Employee;
+import com.vti.final_exam.entity.Manager;
+
+public interface IUserService {
+
+	List<Employee> showProjectByEmployee(String name);
+
+	List<Manager> showProjectByManager(String name);
+	
+}

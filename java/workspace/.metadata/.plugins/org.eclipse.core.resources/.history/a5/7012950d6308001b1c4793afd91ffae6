@@ -1,0 +1,26 @@
+package backend.controller;
+
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.sql.SQLException;
+
+import backend.service.IManagerService;
+import backend.service.ManagerService;
+
+public class ManagerController {
+	private IManagerService iManagerService;
+	
+	public ManagerController() {
+		try {
+			iManagerService = new ManagerService();
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
+	
+	public boolean insertManager(String firstName,String lastName,String phone, String email,short expInYear) throws SQLException {
+		return iManagerService.insertManager(firstName,lastName,phone,email,expInYear);
+	}
+}

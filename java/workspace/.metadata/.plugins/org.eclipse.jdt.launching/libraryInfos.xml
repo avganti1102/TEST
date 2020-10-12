@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <libraryInfos>
-<libraryInfo home="F:\Java\jre1.8.0_261" version="1.8.0_261">
-<bootpath>
-<entry path="F:\Java\jre1.8.0_261\lib\resources.jar"/>
-<entry path="F:\Java\jre1.8.0_261\lib\rt.jar"/>
-<entry path="F:\Java\jre1.8.0_261\lib\sunrsasign.jar"/>
-<entry path="F:\Java\jre1.8.0_261\lib\jsse.jar"/>
-<entry path="F:\Java\jre1.8.0_261\lib\jce.jar"/>
-<entry path="F:\Java\jre1.8.0_261\lib\charsets.jar"/>
-<entry path="F:\Java\jre1.8.0_261\lib\jfr.jar"/>
-<entry path="F:\Java\jre1.8.0_261\classes"/>
-</bootpath>
-<extensionDirs>
-<entry path="F:\Java\jre1.8.0_261\lib\ext"/>
-<entry path="C:\Windows\Sun\Java\lib\ext"/>
-</extensionDirs>
-<endorsedDirs>
-<entry path="F:\Java\jre1.8.0_261\lib\endorsed"/>
-</endorsedDirs>
-</libraryInfo>
+    <libraryInfo home="F:\Java\jre1.8.0_261" version="1.8.0_261">
+        <bootpath>
+            <entry path="F:\Java\jre1.8.0_261\lib\resources.jar"/>
+            <entry path="F:\Java\jre1.8.0_261\lib\rt.jar"/>
+            <entry path="F:\Java\jre1.8.0_261\lib\sunrsasign.jar"/>
+            <entry path="F:\Java\jre1.8.0_261\lib\jsse.jar"/>
+            <entry path="F:\Java\jre1.8.0_261\lib\jce.jar"/>
+            <entry path="F:\Java\jre1.8.0_261\lib\charsets.jar"/>
+            <entry path="F:\Java\jre1.8.0_261\lib\jfr.jar"/>
+            <entry path="F:\Java\jre1.8.0_261\classes"/>
+        </bootpath>
+        <extensionDirs>
+            <entry path="F:\Java\jre1.8.0_261\lib\ext"/>
+            <entry path="C:\Windows\Sun\Java\lib\ext"/>
+        </extensionDirs>
+        <endorsedDirs>
+            <entry path="F:\Java\jre1.8.0_261\lib\endorsed"/>
+        </endorsedDirs>
+    </libraryInfo>
 </libraryInfos>

@@ -1,0 +1,9 @@
+package Lesson11;
+
+public class InnerClass {
+	/*----InnerClass------
+	 *		- Là khai báo một lớp trong một lớp khác
+	 *	
+	 */	
+	
+}

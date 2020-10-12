@@ -1,0 +1,7 @@
+public class UserController {
+	private IUserService userService;
+	
+	public UserController() {
+		userService = new UserService();
+	}
+}

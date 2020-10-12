@@ -1,0 +1,7 @@
+package backend;
+
+public class CallProcedure {
+	DepartmentDao dd = new DepartmentDao();
+	
+	sp_delete_department()
+}

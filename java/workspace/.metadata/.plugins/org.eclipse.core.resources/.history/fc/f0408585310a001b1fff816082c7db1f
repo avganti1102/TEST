@@ -1,0 +1,7 @@
+package com.vti.final_exam.entity;
+
+public class Project {
+	private int projectID;
+	private int teamSize;
+	Manager 
+}

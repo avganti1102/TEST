@@ -1,0 +1,12 @@
+package com.vti.final_exam.backend.controller;
+
+import com.vti.final_exam.backend.service.IUserService;
+import com.vti.final_exam.backend.service.UserService;
+
+public class UserController {
+	private IUserService userService;
+	
+	public UserController() {
+		userService = new UserService();
+	}
+}

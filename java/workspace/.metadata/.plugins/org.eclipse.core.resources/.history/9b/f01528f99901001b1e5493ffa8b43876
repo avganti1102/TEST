@@ -1,0 +1,16 @@
+package Lesson9;
+
+public class main {
+	List : + ArrayList
+		   + LinkedList
+		   +
+		 -add(Object)
+		 -add(index,Object)
+		 -clear() : xoa het
+		 -size()
+		 -get(index)
+		 -contains(Object) : ktra xem co Object nay k
+		 -isEmpty() : check xem co rong k
+		 -indexOf(Object) : vi tri Object
+		 -lastIndexOf() : 
+}

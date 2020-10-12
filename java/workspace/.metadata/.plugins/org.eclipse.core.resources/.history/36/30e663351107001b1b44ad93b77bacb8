@@ -1,0 +1,6 @@
+package entity;
+
+public class department {
+	private int id;
+	private String name;
+}
